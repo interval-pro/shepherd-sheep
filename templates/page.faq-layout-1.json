@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "main": {
+      "type": "faq-template-1",
+      "blocks": {
+        "4397e945-ff9f-4c2f-a85e-2c321758bcf2": {
+          "type": "class",
+          "settings": {
+            "class": "",
+            "title": "What if my billing and shipping addresses are different?",
+            "desc": "No problem. In the billing step of check-out, you’ll have the option to use a different address than the one you provide for shipping. Just click the little checkbox near the top of the billing page."
+          }
+        },
+        "c8df13c8-d211-4104-88d0-b9f14f2fd0bb": {
+          "type": "class",
+          "settings": {
+            "class": "",
+            "title": "When will my order ship?",
+            "desc": "Assuming everything goes as it should, your order will leave our warehouse within 1 business day. A business day is Monday-Friday, excluding holidays."
+          }
+        },
+        "d23708e3-78bc-45f3-b5a3-b7f5e72778fc": {
+          "type": "class",
+          "settings": {
+            "class": "",
+            "title": "How can I track my order?",
+            "desc": "Once your order has been shipped, we’ll send you an email with your tracking number which you can use here. Alternately, if you ordered while signed in with an account you can find the shipment and tracking information in your order history."
+          }
+        },
+        "e6de91d3-9ce6-4409-9c36-a0d479f06657": {
+          "type": "class",
+          "settings": {
+            "class": "",
+            "title": "What is the cost of shipping?",
+            "desc": "Standard shipping rates: Price: $9.99* USA - 7-10 business days* EUROPE - 7 business days* UK - 2-3 business days. We aim to send out your order within 2-7 business days after payment.Please have in mind that during holidays like Easter, Thanksgiving, Christmas and New Year's processing time may increase by several additional days due to the increased workload worldwide."
+          }
+        },
+        "37964087-6348-4e9d-9d5f-c0dd63126dd5": {
+          "type": "class",
+          "settings": {
+            "class": "",
+            "title": "Returns & Exchanges",
+            "desc": "For any unworn\/unwashed products with all original tags and labels attached, you can return it for a refund, or exchange for something of equal value within 30 days of receipt. Just contact us via this form (LINK TO FORM) and we will take it from there!"
+          }
+        },
+        "f7a4a7fd-8726-43c8-baac-3e8f0891bd17": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "title": "Can I cancel my order?",
+            "desc": "Gaecenas accumsan lacus vel facilisis volutpat est velit. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus."
+          }
+        },
+        "39eec3bb-4707-4d13-82cf-6c5be8028428": {
+          "type": "class",
+          "disabled": true,
+          "settings": {
+            "class": "",
+            "title": "Can I cancel my order?",
+            "desc": "Gaecenas accumsan lacus vel facilisis volutpat est velit. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus."
+          }
+        }
+      },
+      "block_order": [
+        "4397e945-ff9f-4c2f-a85e-2c321758bcf2",
+        "c8df13c8-d211-4104-88d0-b9f14f2fd0bb",
+        "d23708e3-78bc-45f3-b5a3-b7f5e72778fc",
+        "e6de91d3-9ce6-4409-9c36-a0d479f06657",
+        "37964087-6348-4e9d-9d5f-c0dd63126dd5",
+        "f7a4a7fd-8726-43c8-baac-3e8f0891bd17",
+        "39eec3bb-4707-4d13-82cf-6c5be8028428"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "1,50",
+        "margin": "1,50",
+        "show_background_image": false,
+        "background_style": "none",
+        "background_size": "auto",
+        "enable_overlay": false,
+        "background_color": "#000000",
+        "overlay_transparency": "0.5",
+        "section_heading": "FAQ",
+        "section_sub_heading": "",
+        "section_description": "Contact us if you don't see your question here",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "#ffffff",
+        "section_description_color": "#ffffff",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "block_style": "default-style",
+        "text_position": "text-start",
+        "border_radius": "0",
+        "grid_gap": "30",
+        "enable_box_shadow": false,
+        "enable_heading_icons": true,
+        "faq_icon_size": "30",
+        "enable_segmented_layout": true,
+        "segmented_layout_gap": "15",
+        "faq_border_color": "#ffffff",
+        "faq_heading_color": "#c8924a",
+        "faq_heading_bg_color": "#000000",
+        "faq_content_color": "#ffffff",
+        "faq_content_bg_color": "#000000",
+        "custom_class_name": ""
+      }
+    },
+    "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3": {
+      "type": "home-html-text",
+      "disabled": true,
+      "custom_css": [
+        "\/* Center the button container horizontally and vertically *\/.button-container {position: absolute; padding: 40px; top: 50%; left: 50%; transform: translate(-50%, -150%); text-align: center;}",
+        " \/* Style the button *\/.styled-button {padding: 20px 60px; background-color: #c8924a; \/* Change this to your desired background color *\/ color: #ffffff; \/* Change this to your desired text color *\/ font-size: 16px; text-decoration: none; border-radius: 5px;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "100,0",
+        "margin": "100,0",
+        "show_background_image": false,
+        "background_style": "none",
+        "background_size": "auto",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<div class=\"button-container\">\n<a href=\"https:\/\/shepherd-sheep.myshopify.com\/pages\/contact?ose=false\" class=\"styled-button\">Contact Us<\/a>\n<\/div>",
+        "custom_class_name": ""
+      }
+    },
+    "5de0faa6-29c7-4f01-9c92-4e5440fc689b": {
+      "type": "home-deal-banner",
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "50,50",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "none",
+        "background_size": "auto",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "heading_position": "text-center",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "show_image": false,
+        "block_title": "",
+        "block_sub_title": "",
+        "block_description": "",
+        "deal_end_date": "",
+        "deals_border_radius": "0",
+        "block_button_text": "Contact Us",
+        "block_button_link": "shopify:\/\/pages\/contact",
+        "block_text_align": "text-center",
+        "title_color": "",
+        "sub_title_color": "",
+        "description_color": "",
+        "button_bg_color": "",
+        "button_text_color": "",
+        "button_hover_bg_color": "",
+        "button_hover_text_color": "",
+        "deals_section_bg_color": "",
+        "deals_section_timer_color": "",
+        "deals_section_timer_duration_color": "",
+        "custom_class_name": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3",
+    "5de0faa6-29c7-4f01-9c92-4e5440fc689b"
+  ]
+}

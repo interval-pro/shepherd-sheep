@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-template-accordion-tab-right",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "full": true,
+        "spacing_both_ends": true,
+        "padding": "0,0",
+        "margin": "0,0",
+        "heading": "Recommended products",
+        "heading_position": "text-center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

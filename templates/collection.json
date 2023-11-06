@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-template",
+      "blocks": {
+        "4afe737c-35ed-432f-9c8a-f944ac644d37": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "filter_title": "Category",
+            "linklist": ""
+          }
+        },
+        "c1f14e69-83d1-4c5d-b400-b6466f295358": {
+          "type": "collection_filter",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "d8c06ad2-b5c4-4ce8-a3b5-06f9c9bf52fb": {
+          "type": "carousel",
+          "disabled": true,
+          "settings": {
+            "title": "Designer Suits",
+            "collection": "best-selling-home1",
+            "limit": 5
+          }
+        },
+        "29bfbc1b-3c14-4598-bc93-0a77e4e0a6d3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "Premium Suits",
+            "collection": "elegant-products-home1",
+            "limit": 3
+          }
+        },
+        "092d8a62-d51f-4ede-8c05-af1b468c517c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "link_text": "Shop Now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4afe737c-35ed-432f-9c8a-f944ac644d37",
+        "c1f14e69-83d1-4c5d-b400-b6466f295358",
+        "d8c06ad2-b5c4-4ce8-a3b5-06f9c9bf52fb",
+        "29bfbc1b-3c14-4598-bc93-0a77e4e0a6d3",
+        "092d8a62-d51f-4ede-8c05-af1b468c517c"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "30,0",
+        "margin": "0,0",
+        "show_collection_image": true,
+        "banner_position": "with-in-container",
+        "show_excerpt": true,
+        "show_sub_collection": true,
+        "items": "3",
+        "collections_sort_enable": false,
+        "collections_view_enable": false,
+        "enable_items_per_page": false,
+        "collections_custom_cols": false,
+        "pagination": "loadmore_btn",
+        "grid": "3",
+        "rows": "6",
+        "filter_type": "vertical"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

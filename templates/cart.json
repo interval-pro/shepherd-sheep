@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart-template",
+      "settings": {
+        "enable_cart_note": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

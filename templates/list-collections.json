@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collection",
+      "settings": {
+        "full": true,
+        "spacing_both_ends": true,
+        "padding": "0,0",
+        "margin": "0,0",
+        "use_custom_list_collection": true,
+        "list-collections": "main-menu-1",
+        "collection_btn_text": "Shop Now",
+        "show_item_count": true,
+        "show_excerpt": true,
+        "grid": "4"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
