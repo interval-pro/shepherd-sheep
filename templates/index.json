@@ -168,7 +168,7 @@
         "enable_overlay": false,
         "background_color": "#9f6000",
         "overlay_transparency": "",
-        "section_heading": "UNDERWEAR",
+        "section_heading": "NEW ARRIVALS",
         "section_sub_heading": "",
         "section_description": "",
         "section_button_text": "",
@@ -204,7 +204,7 @@
         "enable_list_view": false,
         "grid": "3",
         "post_limit": 3,
-        "enable_slider": true,
+        "enable_slider": false,
         "items_per_view": 3,
         "items_laptop_view": 3,
         "items_tablet_view": 2,
@@ -216,7 +216,7 @@
         "dots": false,
         "carousel_pagination_alignment": "center_pagination",
         "carousel_pagination_bottom_alignment": "outside_element",
-        "arrows": true,
+        "arrows": false,
         "nav_arrow_position": "center-navigation",
         "center_nav_arrow_alignment": "inside_container",
         "navigation_button_color": "",
@@ -586,7 +586,7 @@
         "enable_overlay": false,
         "background_color": "#29292b",
         "overlay_transparency": "1",
-        "section_heading": "",
+        "section_heading": "WHY CHOOSE US",
         "section_sub_heading": "",
         "section_description": "",
         "section_button_text": "",
@@ -620,14 +620,16 @@
         "block_button_text_color": "",
         "block_button_hover_bg_color": "",
         "block_button_hover_text_color": "",
-        "custom_class_name": "roar-suit-support-block"
+        "custom_class_name": "custom-roar-support-block"
       }
     },
     "fd7fc85a-3903-4044-9b3d-0c0d5914cd04": {
       "type": "home-html-text",
       "custom_css": [
-        ".custom_table_1,.custom_table_1 tr,.custom_table_1 td {border: none !important; border-collapse: collapse !important; vertical-align: top;}",
-        ".custom_table_1 img {width: 50px; height: 50px; margin-bottom: -25px;}"
+        ".custom_table_1,.custom_table_1 tr,.custom_table_1 td {border: none !important; border-collapse: collapse !important; vertical-align: top; color: white !important}",
+        ".custom_table_1 img {width: 100px; height: 100px;}",
+        ".custom_table_1 tr td h4 strong {color: white !important;}",
+        ".custom_table_1 {margin: 120px 0;}"
       ],
       "settings": {
         "full": false,
@@ -919,8 +921,8 @@
     "1654768294304f5d86",
     "165476243742024097",
     "fd7fc85a-3903-4044-9b3d-0c0d5914cd04",
-    "d9eadb7c-99fb-4988-abdc-e5560650b986",
     "16548357466736a733",
-    "daa1888d-347e-4526-8f3d-c8e90738f7a4"
+    "daa1888d-347e-4526-8f3d-c8e90738f7a4",
+    "d9eadb7c-99fb-4988-abdc-e5560650b986"
   ]
 }

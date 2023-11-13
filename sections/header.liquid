@@ -168,9 +168,6 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
   <header id="header">
-    {%- if section.settings.show_announcement -%}
-    {% render 'announcement' %}
-    {% endif %}
     {% if section.settings.header_mail != blank or  section.settings.header_phone != blank or section.settings.show_header_social or section.settings.search_type == 'search-box' or section.settings.show_secondary_menu  or
       section.settings.show_account or section.settings.show_header_cart or  section.settings.show_header_wishlist or section.settings.show_header_compare or section.settings.show_header_currency -%}
 
@@ -279,7 +276,9 @@
         </div>
       </div>
       {% endif %}   
-
+      {%- if section.settings.show_announcement -%}
+        {% render 'announcement' %}
+        {% endif %}
     </section>
   </header>
 </div>
@@ -774,17 +773,18 @@ console.log("parentLeft==="+parentLeft);
     padding: 0px 5px;
     text-align: start;
   }
-header .dt-sc-header-logo-sec, .sticky-header-active{     background: transparent !important;
+header .dt-sc-header-logo-sec, .sticky-header-active {
+  background: {{ settings.color-2 }} !important;
     position: absolute;
-
     right: 0;
-    left: 0;}
+    left: 0;
+  }
   @-webkit-keyframes HideList { from { -webkit-transform: scaleY(1); transform: scaleY(1); } to { -webkit-transform: scaleY(0); transform: scaleY(0); } }
 
   @keyframes HideList { from { -webkit-transform: scaleY(1); transform: scaleY(1); } to { -webkit-transform: scaleY(0); transform: scaleY(0); } }
 
   header { position: relative; z-index:4; }
-  header .announcement-bar { background: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }}; height:{{ section.settings.announcement_height }}px; }
+  header .announcement-bar { background: {{ settings.color-1 }}; color: {{ section.settings.text_color }}; height:{{ section.settings.announcement_height }}px; }
   header .announcement-bar p, .announcement-bar a{ color: {{ section.settings.text_color }}; }
   header .announcement-bar .close:hover, .announcement-bar a:hover { color: {{ section.settings.text_hover_color }}; }
   header .announcement-bar .close{ color: {{ section.settings.text_color }}; } 
@@ -1203,7 +1203,7 @@ header .dt-sc-header-logo-sec, .sticky-header-active{     background: transparen
 
 
 
-    #AccessibleNav > *{ margin-top:40px; margin-bottom: 30px; }
+    #AccessibleNav > *{ margin-top:20px; margin-bottom: 20px; }
 
 
   @media (min-width:1540px) {

@@ -53,7 +53,12 @@
         </span>
         {% endif %} 
         <div class="image_group">
-          <div class="ImageOverlayCa"></div>
+          <div class="ImageOverlayCa">
+            <div class="inner-container">
+              <span class="product-title">{{ product.title }}</span>
+              <div class="see-more">see more</div>
+            </div>
+          </div>
           {% if settings.secondary_image_use %}
           {% if product.images.size > 1 %}
           <div class="reveal"> 
@@ -73,12 +78,11 @@
       <div class="product_right_tag  {% if on_sale %} offer_exist {% endif %}">
         {% if on_sale %}{% render 'offer-price', product: current_variant %} {% endif %}         
       </div>
-      <div class="ImageWrapper"> 
+      <div class="ImageWrapper">
+        {% comment %}
+          <div class="product-button dt-sc_{{settings.product_button_style}} {{ settings.icon_alignment}}"> 
 
-
-        <div class="product-button dt-sc_{{settings.product_button_style}} {{ settings.icon_alignment}}"> 
-
-          {% if settings.product_button_style == 'icon' %}
+            {% if settings.product_button_style == 'icon' %}
           <div>
             {% if settings.enable_add_cart %}
             {% if product.available %}               
@@ -88,11 +92,11 @@
             {% endform %}          
             {% endif %}
             {% endif %} 
-                    {% if settings.product_button_style == 'icon' %} 
-        <a href="{{ product.url | within: collection }}">{{ 'products.product.select_options' | t }}</a>
-        {% endif %}
+              {% if settings.product_button_style == 'icon' %} 
+                <a href="{{ product.url | within: collection }}">{{ 'products.product.select_options' | t }}</a>
+              {% endif %}
           </div>
-          {% endif %}          
+          {% endif %}
 
           {% if settings.enable_compare %}           
           <div>
@@ -115,10 +119,12 @@
           </div>
           {% endif %}  
         </div>
+      {% endcomment %}
       </div>
     </div>
 
-    <div class="product-detail {{ settings.item_aignment}}">
+    {% comment %}
+      <div class="product-detail {{ settings.item_aignment}}">
       {% render 'new-label' , product: product %}   
       {% if settings.display_vendor %}<p class="product-vendor"><span>{{ product.vendor }}</span></p>{% endif %}
 
@@ -126,7 +132,6 @@
       <span class="shopify-product-reviews-badge spr-badge" data-id="{{ product.id }}"></span> 
       {% endif %}             
 
-      <h5  class="grid-link__title"><a href="{{ product.url | within: collection }}">{{ product.title }}<span class="choosen-swatch"></span></a></h5> 
       <div class="grid-link__meta">
         {% render 'product-price', variant: product %}  
       </div> 
@@ -192,5 +197,6 @@
       </div>
 
     </div>
+  {% endcomment %}
   </div>  
 </li>

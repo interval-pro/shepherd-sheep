@@ -9,10 +9,7 @@
     <div class="dt-sc-swiper-slider swiper-container {% if section.settings.dots %} {{ section.settings.carousel_pagination_bottom_alignment }} {{ section.settings.carousel_pagination_alignment }} {% endif %} {% if section.settings.arrows %}  {{ section.settings.nav_arrow_position }} {{ section.settings.center_nav_arrow_alignment }} {% endif %}" style=" ">
       <div id="home-slider-{{ section.id }}">
         <div class="swiper-wrapper">
-          {% for block in section.blocks %}  
-
-
-
+          {% for block in section.blocks %}
           {%- if  block.settings.text_alignment == 'text-start' -%}
           {%- assign style = '1' -%}
           {%- elsif block.settings.text_alignment == 'text-end' -%}
@@ -83,6 +80,15 @@
   });  
 </script>
 <style>
+  #shopify-section-{{section.id}}.home-slideshow-section .dt-sc-swiper-slider .img-filter { 
+    content: " ";
+    background-color: rgba(61, 85, 122, 0.45);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   }
   #shopify-section-{{section.id}}.home-slideshow-section .dt-sc-swiper-slider { padding-bottom: 0;  margin-top:{{top}}px; margin-bottom:{{bottom}}px; }
   #shopify-section-{{section.id}}.home-slideshow-section .dt-sc-swiper-slider.swiper-container [class*="swiper-container"] { 
     margin: 0;
@@ -168,9 +174,14 @@
 
 
   #shopify-section-{{section.id}}.home-slideshow-section .slider-{{ block.id }}-list .dt-sc-btn { 
-    background: var(--DT_Button_BG_Color); background:{{ block.settings.btn_bg_color  }};
-      color: var(--DT_Button_Text_Color); color:{{ block.settings.btn_txt_color }};
-        pointer-events: all; border: none; }
+    background: var(--DT_Button_BG_Color);
+    background: {{ block.settings.btn_bg_color  }};
+    color: var(--DT_Button_Text_Color);
+    color:{{ block.settings.btn_txt_color }};
+    pointer-events: all;
+    border: none;
+    border-radius: 32px;
+  }
   #shopify-section-{{section.id}}.home-slideshow-section .slider-{{ block.id }}-list .dt-sc-btn:hover { 
     background: transparent; background:{{ block.settings.btn_hoverbg_color  }};
     color: var(--DT_Button_Text_Hover_Color); color:{{ block.settings.btn_hovertxt_color }};border:none; }

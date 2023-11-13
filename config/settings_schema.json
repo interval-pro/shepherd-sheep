@@ -1,5 +1,40 @@
 [
   {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color-1",
+        "label": "Color 1",
+        "default": "#E13D1D"
+      },
+      {
+        "type": "color",
+        "id": "color-2",
+        "label": "Color 2",
+        "default": "#00142B"
+      },
+      {
+        "type": "color",
+        "id": "color-3",
+        "label": "Color 3",
+        "default": "#EC8562"
+      },
+      {
+        "type": "color",
+        "id": "color-4",
+        "label": "Color 4",
+        "default": "#304768"
+      },
+      {
+        "type": "color",
+        "id": "color-5",
+        "label": "Color 5",
+        "default": "#F4F4F4"
+      }
+    ]
+  },
+  {
     "name": "General Settings ",
     "settings": [
       {
