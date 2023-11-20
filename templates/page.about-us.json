@@ -159,7 +159,7 @@
       ],
       "custom_css": [
         "@media (max-width: 768px) {{font-size: 9px; }}",
-        ".dt-sc-main-heading {max-width: 100%;}"
+        ".our-mission > .dt-sc-main-heading {max-width: unset !important;}"
       ],
       "settings": {
         "full": true,
@@ -235,7 +235,7 @@
         "additional_heading_color": "",
         "additional_sub_heading_color": "",
         "additional_description_color": "",
-        "custom_class_name": ""
+        "custom_class_name": ".our-mission"
       }
     },
     "d4d7f0de-6f59-404f-be9b-d82fb02df52f": {
