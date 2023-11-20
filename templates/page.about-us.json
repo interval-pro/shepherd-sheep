@@ -153,11 +153,7 @@
         "template--20232722776365__7c3b4a04-dac7-44bd-952b-b83dd709088e-class-5"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {{font-size: 9px; }}",
-        ".our-mission .dt-sc-main-heading {max-width: unset !important;}",
-        ".our-mission .dt-sc-heading-description {text-align: justify;}",
-        ".style3 {background-color: var(--color-3); padding: 2px;}",
-        ".home-specification-banner .dt-sc-section-wrapper {padding-bottom: 0;}"
+        "@media (max-width: 768px) {{font-size: 9px; }}"
       ],
       "settings": {
         "full": true,
