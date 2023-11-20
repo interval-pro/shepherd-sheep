@@ -156,7 +156,7 @@
         "@media (max-width: 768px) {{font-size: 9px; }}",
         ".our-mission .dt-sc-main-heading {max-width: unset !important;}",
         ".our-mission .dt-sc-heading-description {text-align: justify;}",
-        "style3 {background-color: red;}"
+        ".style3 {background-color: var(--color-3);}"
       ],
       "settings": {
         "full": true,
