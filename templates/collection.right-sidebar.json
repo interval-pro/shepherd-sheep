@@ -2,7 +2,6 @@
   "sections": {
     "1626870276b398a0aa": {
       "type": "home-grid-banner",
-      "disabled": true,
       "blocks": {
         "1626870276b398a0aa-0": {
           "type": "content",
@@ -39,6 +38,7 @@
       "block_order": [
         "1626870276b398a0aa-0"
       ],
+      "disabled": true,
       "settings": {
         "full": false,
         "spacing_both_ends": false,
