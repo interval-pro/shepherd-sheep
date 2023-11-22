@@ -20,6 +20,7 @@
     {{ content_for_header }}       
     <!-- content for header -->
   </head>
+  
   <body id="{{ page_title | handle }}" class="{% if settings.enable_rtl %}rtl-enabled{% endif %} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% unless tempate contains 'index' %} others {% endunless %}">
 
     {% if settings.preloader_enable %}<div class="se-pre-con"></div>{% endif %}
@@ -82,3 +83,11 @@
     <!-- End Recently Viewed Products -->
   </body>
 </html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+* {
+  font-family: "Mulish", sans-serif !important;
+  line-height: normal !important;
+}
+</style> 

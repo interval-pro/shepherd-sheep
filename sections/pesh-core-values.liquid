@@ -1,11 +1,148 @@
 <div class="pesh-core-values-section">
+    <div class="sub-section what-we-do-sub-sction">
+        <div class="title">WHAT WE DO</div>
+        <div class="content">
+            <div class="image"></div>
+            <div class="text">
+                "At Shepherd & Sheep, we believe that underwear is more than just a garment; it's an expression of individuality and self-care. Our priority is to offer a curated collection of
+top-quality underwear, crafted from the softest fabrics and tailored for the perfect fit. We take pride in our commitment to providing men with more than just underwear; we provide a sense of comfort, style, and confidence that complements their unique personality.
+At the heart of our brand is a dedication to premium craftsmanship. We meticulously select the finest materials and employ skilled artisans to ensure every piece meets our exacting standards. 
+            </div>
+        </div>
+    </div>
+    <div class="sub-section our-mission-sub-section">
+        <div class="title">OUR MISSION</div>
+        <div class="content">
+            We are committed to creating the world's first high-premium purpose-built boxers.
+Our mission is to continue to innovate and create purpose-built boxers that are unlike anything else on the market. We are passionate about producing boxers that provide unmatched comfort and cosiness, all while being made from sustainable materials that are good for both you and the environment. Our products are designed with inclusivity in mind, catering to men of all shapes and sizes. Our focus is on quality, and we take great pride in using only the finest materials to create our products. We believe that our attention to detail and commitment to excellence are what make us different from our competitors.
+        </div>
+
+    </div>
+    <div class="sub-section our-core-values-sub-section">
+        <div class="title">OUR CORE VALUES</div>
+        <div class="content">
+            <div class="core-values-block">
+                <img src="{{ 'friendliness.svg' | asset_url  }}" alt="" height="100" width="100" loading="lazy">
+                <div class="core-value-text">FRIENDLINESS</div>
+                <div class="core-value-description">Building a supportive and inclusive community where all men feel welcome and valued.</div>
+            </div>
+            <div class="core-values-block">
+                <img src="{{ 'sustainability.svg' | asset_url  }}" alt="" height="100" width="100" loading="lazy">
+                <div class="core-value-text">SUSTAINABILITY</div>
+                <div class="core-value-description">Reducing our environmental impact through eco-friendly practices and materials, ensuring a greener, more responsible future.</div>
+            </div>
+            <div class="core-values-block">
+                <img src="{{ 'innovation.svg' | asset_url  }}"  alt="" height="100" width="100" loading="lazy">
+                <div class="core-value-text">INNOVATION</div>
+                <div class="core-value-description">Constantly pushing the boundaries of design and technology to bring you unique underwear that adapts to your needs and lifestyle.</div>
+            </div>
+            <div class="core-values-block">
+                <img src="{{ 'premium-quality.svg' | asset_url  }}"  alt="" height="100" width="100" loading="lazy">
+                <div class="core-value-text">PREMIUM QUALITY</div>
+                <div class="core-value-description">Every pair is crafted with meticulous precision, ensuring unparalleled comfort and lasting durability.</div>
+            </div>
+            <div class="core-values-block">
+                <img src="{{ 'purpose-driven.svg' | asset_url  }}"  alt="" height="100" width="100" loading="lazy">
+                <div class="core-value-text">PURPOSE DRIVEN</div>
+                <div class="core-value-description">We go beyond fashion, striving to empower men to feel their best and make a positive impact in the world, one comfortable step at a time.</div>
+            </div>
+        </div>
+
+    </div>
 
 </div>
 <style>
     .pesh-core-values-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pesh-core-values-section .sub-section {
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 5%;
+        gap: 50px;
 
     }
-</style>
+    .pesh-core-values-section .sub-section .title {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .pesh-core-values-section .what-we-do-sub-sction {
+        background-color: {{ settings.color-2 }}
+    }
+    .pesh-core-values-section .what-we-do-sub-sction .title {
+        color: {{ settings.color-1 }};
+
+    }
+
+    .pesh-core-values-section .what-we-do-sub-sction .content {
+        display: flex;
+    }
+    .pesh-core-values-section .what-we-do-sub-sction .content .image {
+        width: 50%;
+    }
+    .pesh-core-values-section .what-we-do-sub-sction .content .text {
+        color: {{ settings.color-5 }};
+        font-size: 30px; 
+        line-height: normal;
+        font-weight: 300; 
+        text-align: right;
+        width: 50%;
+    }
+
+
+    .pesh-core-values-section .our-mission-sub-section {
+        background-color: {{ settings.color-5 }};
+        color: {{ settings.color-4 }};
+
+    }
+
+    .pesh-core-values-section .our-mission-sub-section .content {
+        font-size: 30px; 
+    }
+
+    .pesh-core-values-section .our-core-values-sub-section {
+        background-color: {{ settings.color-3 }};
+        color: {{ settings.color-5 }};
+        font-weight: 300;
+    }
+
+    .pesh-core-values-section .our-core-values-sub-section .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    .pesh-core-values-section .our-core-values-sub-section .content .core-values-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        min-width: 220px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .pesh-core-values-section .our-core-values-sub-section .content .core-values-block img {}
+
+    .pesh-core-values-section .our-core-values-sub-section .content .core-values-block .core-value-text {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .pesh-core-values-section .our-core-values-sub-section .content .core-values-block .core-value-description {
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    </style>
 {% schema %}
     {
       "name": "Pesh Core Values Section",
