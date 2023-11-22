@@ -1,6 +1,156 @@
-<div class="pesh-contact-page"></div>
+<div class="pesh-contact-page">
+  <div class="wrapper">
+    <div class="title">
+      GET IN TOUCH WITH US
+    </div>
+    <div class="contact-box">
+      <div class="email-box">
+        <div class="icon"></div>
+        <div class="email-type">Business email</div>
+        <div class="mail">business@shepherdandsheep.co.ukess</div>
+      </div>
+      <div class="email-box">
+        <div class="icon"></div>
+        <div class="email-type">Support email</div>
+        <div class="mail">support@shepherdandsheep.co.ukess</div>
+      </div>
+    </div>
+    <div class="under-contact-box">
+      If you have any questions regarding a product or your order use our support email or use the message form. We will get back to you as soon as possible.
+    </div>
+
+    <div class="form-wrapper">
+      {% form 'contact' %}
+        {% if form.posted_successfully? %}
+          <p class="note form-success">
+            {{ 'contact.form.post_success' | t }}
+          </p>
+        {% endif %}
+        {{ form.errors | default_errors }}
+        <label for="ContactFormName" class="label--hidden">{{ 'contact.form.name' | t }}</label>
+        <input
+          type="text"
+          id="ContactFormName"
+          required
+          class="input-full"
+          name="contact[name]"
+          placeholder="{{ 'contact.form.name' | t }}"
+          autocapitalize="words"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+        <label for="ContactFormEmail" class="label--hidden">{{ 'contact.form.email' | t }}</label>
+        <input
+          type="email"
+          id="ContactFormEmail"
+          required
+          class="input-full"
+          name="contact[email]"
+          placeholder="{{ 'contact.form.email' | t }}"
+          autocorrect="off"
+          autocapitalize="off"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+        <label for="ContactFormPhone" class="label--hidden">{{ 'contact.form.phone' | t }}</label>
+        <input
+          type="tel"
+          id="ContactFormPhone"
+          required
+          class="input-full"
+          name="contact[phone]"
+          placeholder="{{ 'contact.form.phone' | t }}"
+          pattern="[0-9\-]*"
+          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+        <label for="ContactFormMessage" class="label--hidden">{{ 'contact.form.message' | t }}</label>
+        <textarea
+          rows="10"
+          id="ContactFormMessage"
+          class="input-full"
+          name="contact[body]"
+          placeholder="{{ 'contact.form.message' | t }}">
+          {% if form.body %}
+            {{ form.body }}{% endif %}
+        </textarea>
+        <button type="submit" class="btn">
+          {{ 'contact.form.send' | t }}
+        </button>
+      {% endform %}
+    </div>
+  </div>
+</div>
 <style>
-  .pesh-contact-page {}
+  .pesh-contact-page {
+    background-color: {{ settings.color-2 }};
+    color: {{ settings.color-5 }};
+  }
+  .pesh-contact-page .wrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .pesh-contact-page .title {
+    color: {{ settings.color-1 }};
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .pesh-contact-page .contact-box {
+    display: flex;
+    padding: 0 50px;
+
+  }
+  .pesh-contact-page .contact-box:first-child {
+    border-right: 3px solid{{ settings.color-5 }};
+  }
+
+  .pesh-contact-page .contact-box .email-box {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .pesh-contact-page .contact-box .email-box:first-child {
+    border-right: 1px solid{{ settings.color-1 }};
+  }
+  .pesh-contact-page .contact-box .email-box:last-child {
+    border-left: 1px solid{{ settings.color-1 }};
+  }
+  .pesh-contact-page .contact-box .email-box .icon {}
+.pesh-contact-page .contact-box .email-box .email-type {
+  font-weight: bold;
+  font-size: 25px;
+}
+.pesh-contact-page .contact-box .email-box .email {
+  font-size: 25px;
+}
+
+.pesh-contact-page .under-contact-box {
+  font-size: 30px;
+  line-height: 35px;
+}
+.pesh-contact-page .form-wrapper {
+    width: 80%;
+}
+
+.pesh-contact-page .form-wrapper .contact-form input,
+.pesh-contact-page .form-wrapper .contact-form textarea {
+      background-color: unset;
+      border: 3px solid {{ settings.color-1 }};
+      border-radius: 32px;
+      margin: 20px 0;
+      color: {{ settings.color-5 }} !important;
+      width: 100%;
+}
+.pesh-contact-page .form-wrapper .contact-form button {
+    border-radius: 32px;
+    background-color: {{ settings.color-1 }};
+    margin: 50px auto;
+}
 </style>
 {% schema %}
   {
