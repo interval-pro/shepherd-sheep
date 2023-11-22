@@ -6,6 +6,82 @@
       "settings": {
       }
     },
+    "29d936c6-61ed-4625-bb52-d647491f17aa": {
+      "type": "slideshow",
+      "blocks": {
+        "da90ca7c-a0d3-4be0-940c-defda57bdec3": {
+          "type": "Slider",
+          "settings": {
+            "slider_type": "image",
+            "image": "shopify:\/\/shop_images\/Banner-slider-v5.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Banner-slider-v5.jpg",
+            "video_url": "https:\/\/storage.googleapis.com\/coverr-main\/mp4\/Palm_Trees.mp4",
+            "iframe_url": "",
+            "mobile_bg_clr": "",
+            "text_alignment": "text-start",
+            "content_position": "center-left",
+            "show_image": false,
+            "show_content": true,
+            "title_2": "",
+            "subheading_color": "",
+            "subheading_size": "25",
+            "title": "We Shape Confidence and Define Comfort",
+            "heading_color": "#ffffff",
+            "heading_size": "54",
+            "desc": "",
+            "desc_color": "#ffffff",
+            "desc_size": "20",
+            "button": "SHOP NOW",
+            "link": "",
+            "btn_bg_color": "#e13d1d",
+            "btn_txt_color": "",
+            "btn_hoverbg_color": "",
+            "btn_hovertxt_color": "",
+            "button_2": "",
+            "link_2": "",
+            "btn_bg_color_2": "",
+            "btn_txt_color_2": "",
+            "btn_hoverbg_color_2": "",
+            "btn_hovertxt_color_2": "",
+            "slide_content_bg": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "da90ca7c-a0d3-4be0-940c-defda57bdec3"
+      ],
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "margin": "0,0",
+        "slider_height": 1080,
+        "slider_height_lap": 960,
+        "slider_height_tab": 800,
+        "slider_height_mobile": 780,
+        "video-aspect-ratio": "",
+        "content_within_container": false,
+        "enable_box_shadow": false,
+        "border_radius": "0",
+        "content_border_radius": "0",
+        "autoplay": false,
+        "slideshow_speed": "5000",
+        "dots": false,
+        "carousel_pagination_alignment": "center_pagination",
+        "carousel_pagination_bottom_alignment": "inside_element",
+        "arrows": false,
+        "nav_arrow_position": "navigation-bottom-center",
+        "center_nav_arrow_alignment": "inside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": "",
+        "section_description": "",
+        "show_social": false
+      }
+    },
     "65c89c3f-98cf-47ff-b6ee-80bd650901ae": {
       "type": "pesh-core-values",
       "settings": {
@@ -14,6 +90,7 @@
   },
   "order": [
     "main",
+    "29d936c6-61ed-4625-bb52-d647491f17aa",
     "65c89c3f-98cf-47ff-b6ee-80bd650901ae"
   ]
 }
