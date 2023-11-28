@@ -402,7 +402,7 @@
           "modal_popup_width": "800px",
           "dt_sc_cookie-expires": 4,
           "dt_sc_cookie-modal-delay": "1000",
-          "overlay_background_color": "#bb9d7b",
+          "overlay_background_color": "#EC8562",
           "overlay_background_transparency": "0.95",
           "block_text_align": "text-start",
           "enable_overlay": false,
@@ -424,7 +424,7 @@
           "button_hover_text_color": "",
           "additional_text_color": "#ffffff",
           "social_icon_color": "#ffffff",
-          "social_icon_hover_color": "#bb9d7b"
+          "social_icon_hover_color": "#E13D1D"
         }
       },
       "product-recommendations": {
