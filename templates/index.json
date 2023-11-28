@@ -621,7 +621,7 @@
         "background_style": "none",
         "background_size": "contain",
         "enable_overlay": false,
-        "background_color": "#F4F4F4",
+        "background_color": "#f4f4f4",
         "overlay_transparency": "1",
         "section_heading": "WHY CHOOSE US",
         "section_sub_heading": "",
@@ -762,6 +762,7 @@
         "template--21586450579757__8a004e30-fc3f-4097-8004-b1f140c4c612-icon-1": {
           "type": "icon",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/free-shipping.svg",
             "title": "Free Shipping",
             "desc": "Step One has a free shipping option available",
             "link_text": "",
@@ -771,6 +772,7 @@
         "template--21586450579757__8a004e30-fc3f-4097-8004-b1f140c4c612-icon-2": {
           "type": "icon",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/customer-service.svg",
             "title": "Customer Service",
             "desc": "Buy with confidence. Our dedicated customer service team is available 24\/7 to answer any questions you have",
             "link_text": "",
@@ -780,6 +782,7 @@
         "template--21586450579757__8a004e30-fc3f-4097-8004-b1f140c4c612-icon-3": {
           "type": "icon",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/first-pair-guarantee.svg",
             "title": "First Pair Guarantee",
             "desc": "We are so confident you'll love your Step Ones, we'll give you a full refund on your first opened and worn pair if you don't like them for any reason.",
             "link_text": "",
