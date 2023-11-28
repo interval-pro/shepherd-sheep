@@ -354,7 +354,7 @@
             "block_button_hover_bg_color": "",
             "block_button_hover_text_color": "#252525",
             "overlay_style": "use_gradient_overlay",
-            "overlay_color": "#9f6000",
+            "overlay_color": "#304768",
             "overlay_opacity": "0.5",
             "rotation_degree": "180"
           }
@@ -390,7 +390,7 @@
             "block_button_hover_bg_color": "",
             "block_button_hover_text_color": "#252525",
             "overlay_style": "use_gradient_overlay",
-            "overlay_color": "#9f6000",
+            "overlay_color": "#304768",
             "overlay_opacity": "0.5",
             "rotation_degree": "180"
           }
@@ -467,7 +467,7 @@
             "reverse_column": true,
             "block_banner_bg": "rgba(0,0,0,0)",
             "block_content_box_bg": "rgba(0,0,0,0)",
-            "block_heading_color": "#c8924a",
+            "block_heading_color": "#E13D1D",
             "block_sub_heading_color": "#ffffff",
             "block_description_color": "#ffffff",
             "block_button_bg_color": "",
@@ -475,7 +475,7 @@
             "block_button_hover_bg_color": "#ffffff",
             "block_button_hover_text_color": "#29292b",
             "overlay_style": "use_overlay",
-            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_color": "#304768",
             "overlay_opacity": "0.5",
             "rotation_degree": "180"
           }
