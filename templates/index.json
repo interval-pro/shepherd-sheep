@@ -621,7 +621,7 @@
         "background_style": "none",
         "background_size": "contain",
         "enable_overlay": false,
-        "background_color": "#29292b",
+        "background_color": "#F4F4F4",
         "overlay_transparency": "1",
         "section_heading": "WHY CHOOSE US",
         "section_sub_heading": "",
