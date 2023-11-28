@@ -528,19 +528,19 @@
         "custom_css": [
           "article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: inline;}",
           ".site-footer .footer_menu.dt-sc-list-inline li a:before {display: none;}",
-          ".footer_menu.dt-sc-list-inline a {font-size: 16px; text-aligh: center;}",
-          "h5.footer__title {font-size: 20px; text-align: center;}",
-          ".footer_menu.dt-sc-list-inline {display: inline-block; list-style-type: none; margin: 0; padding: 0; line-height: 1.5;}",
-          ".footer_menu li:first-child {padding: 0px;}",
+          ".footer_menu.dt-sc-list-inline a {font-size: 16px;}",
+          "h5.footer__title {font-size: 20px;}",
+          ".footer_menu.dt-sc-list-inline {display: flex; flex-direction: column; align-items: flex-start;}",
+          ".footer_menu li {padding: 0px;}",
           ".footer__item--ee1e7888-792d-437f-81bf-5b2e9c509dbe {margin-top: 2.5%;}"
         ],
         "settings": {
           "full": false,
           "spacing_both_ends": false,
-          "padding": "50,50",
-          "top_space": 100,
-          "footer_bg_clr": "#5b5b5b",
-          "color_opacity": 0.5,
+          "padding": "0,50",
+          "top_space": 0,
+          "footer_bg_clr": "#00142B",
+          "color_opacity": 1,
           "footer_bg_img": false,
           "segmented_bg_clr": "#000000",
           "show_footer_title": true,
@@ -564,7 +564,7 @@
           "copyright_text": "",
           "copyright_link": "#",
           "copyright_link_color": "#ffffff",
-          "copyright_link_color_hover": "#bb9d7b"
+          "copyright_link_color_hover": "#EC8562"
         }
       },
       "gdpr-cookies": {
