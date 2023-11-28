@@ -230,6 +230,62 @@
     },
     "16547560311808cc53": {
       "type": "home-custom-section",
+      "blocks": {
+        "1654756031b57efd86-0": {
+          "type": "content",
+          "settings": {
+            "block_heading": "",
+            "block_sub_heading": "",
+            "block_description": "",
+            "html": "<p><\/p>",
+            "block_button_text": "",
+            "block_button_link": "",
+            "heading_position": "text-start",
+            "block_img_1": "shopify:\/\/shop_images\/R6II5979.jpg",
+            "image_1_border_radius": "",
+            "block_img_2": "shopify:\/\/shop_images\/R6II6018.jpg",
+            "image_2_border_radius": "",
+            "reverse_column": false,
+            "fullwidth_images": false,
+            "block_heading_color": "#ffffff",
+            "block_sub_heading_color": "#ffffff",
+            "block_description_color": "#ffffff",
+            "block_html_color": "#ffffff",
+            "block_button_bg_color": "",
+            "block_button_text_color": "",
+            "block_button_hover_bg_color": "",
+            "block_button_hover_text_color": ""
+          }
+        },
+        "1654756031b57efd86-1": {
+          "type": "content",
+          "settings": {
+            "block_heading": "UNDERWEAR WITH A PURPOSE",
+            "block_sub_heading": "",
+            "block_description": "\"Underwear with a Purpose\" is more than a slogan – it's our philosophy. We meticulously craft luxurious men's underwear that's not only stylish and comfortable but also ethically made from premium recyclable materials. Elevate your underwear game while contributing to a more sustainable and purpose-driven world.",
+            "html": "",
+            "block_button_text": "Shop Now",
+            "block_button_link": "shopify:\/\/collections\/underwear",
+            "heading_position": "text-start",
+            "image_1_border_radius": "",
+            "image_2_border_radius": "",
+            "reverse_column": false,
+            "fullwidth_images": true,
+            "block_heading_color": "#E13D1D",
+            "block_sub_heading_color": "#ffffff",
+            "block_description_color": "#ffffff",
+            "block_html_color": "#ffffff",
+            "block_button_bg_color": "rgba(0,0,0,0)",
+            "block_button_text_color": "",
+            "block_button_hover_bg_color": "",
+            "block_button_hover_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1654756031b57efd86-0",
+        "1654756031b57efd86-1"
+      ],
       "custom_css": [
         "@media (max-width: 768px) {{font-size: 9px; }}"
       ],
