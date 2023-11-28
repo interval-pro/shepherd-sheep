@@ -479,8 +479,9 @@ overflow: hidden;
 .custom-roar-support-block {
 
 }
-.custom-roar-support-block .dt-sc-main-heading {
+#shopify-section-{{ section.id }} .custom-roar-support-block .dt-sc-main-heading {
     font-weight: bold;
+    color: {{ section.settings.section_heading_color }};
 }
 .custom-roar-support-block .dt-sc-support-blocks-section {
   display: flex;
@@ -507,12 +508,14 @@ overflow: hidden;
   padding: 0 1rem;
   text-align: center;
 }
-.custom-roar-support-block .dt-sc-support-blocks-section .dt-sc-support-block .dt-sc-support-content .dt-sc-support-heading a {
+#shopify-section-{{ section.id }} .custom-roar-support-block .dt-sc-support-blocks-section .dt-sc-support-block .dt-sc-support-content .dt-sc-support-heading a {
   font-size: 42px;
+  color: {{ section.settings.block_heading_color }};
 }
 
-.custom-roar-support-block .dt-sc-support-blocks-section .dt-sc-support-block .dt-sc-support-content .dt-sc-support-description {
+#shopify-section-{{ section.id }}  .custom-roar-support-block .dt-sc-support-blocks-section .dt-sc-support-block .dt-sc-support-content .dt-sc-support-description {
   font-size: 1rem;
+  color: {{ section.settings.block_description_color }};
 }
 
 @media only screen and (max-width: 1540px) {
@@ -1011,20 +1014,10 @@ overflow: hidden;
             "default": "Heading"
           },
           {
-            "type": "color",
-            "id": "heading_color",
-            "label": "Heading Color"
-          },
-          {
             "type": "text",
             "id": "desc",
             "label": "Description",
             "default": "Lorem ipsum dolor sit amet"
-          },
-          {
-            "type": "color",
-            "id": "description_color",
-            "label": "Description Color"
           },
           {
             "type": "text",
