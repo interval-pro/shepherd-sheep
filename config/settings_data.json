@@ -512,7 +512,7 @@
               "newsletter_btn_hover_color": "#ffffff",
               "newsletter_btn_hover_bg": "#eebd7b",
               "container_width": 20,
-              "column_alignment": "text-start"
+              "column_alignment": "text-end"
             }
           }
         },
