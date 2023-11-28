@@ -789,6 +789,7 @@
         "1245833f-c261-4a40-8b94-189ca94bc4ab": {
           "type": "icon",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/easy-return.svg",
             "title": "Easy Returns",
             "desc": "Picked the wrong size by mistake? No problem, On top of our first pair guarantee we also offer returns\/e xchanges on all unopened products.",
             "link_text": "",
