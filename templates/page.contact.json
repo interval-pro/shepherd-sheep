@@ -4,9 +4,40 @@
       "type": "pesh-contact",
       "settings": {
       }
+    },
+    "a1858ee6-94a1-4400-9366-ec276e8e21c1": {
+      "type": "custom-content",
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "50,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "none",
+        "background_size": "auto",
+        "enable_overlay": true,
+        "background_color": "#F4F4F4",
+        "overlay_transparency": "1",
+        "section_heading": "",
+        "section_sub_heading": "For offers, partnerships, and other business related inquiries,please reach out to us via our business email<br><br><br>",
+        "section_description": "",
+        "section_button_text": "FAQ",
+        "section_button_link": "shopify:\/\/pages\/faq",
+        "section_heading_color": "",
+        "section_sub_heading_color": "#304768",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<!--<div id='insta-feed'><\/div>-->",
+        "custom_class_name": ""
+      }
     }
   },
   "order": [
-    "cd4a5aef-1dfd-406b-889e-13438e476bdd"
+    "cd4a5aef-1dfd-406b-889e-13438e476bdd",
+    "a1858ee6-94a1-4400-9366-ec276e8e21c1"
   ]
 }
