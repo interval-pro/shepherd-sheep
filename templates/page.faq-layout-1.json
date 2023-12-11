@@ -70,6 +70,9 @@
         "f7a4a7fd-8726-43c8-baac-3e8f0891bd17",
         "39eec3bb-4707-4d13-82cf-6c5be8028428"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "full": false,
         "spacing_both_ends": false,
@@ -108,7 +111,7 @@
         "faq_heading_bg_color": "rgba(0,0,0,0)",
         "faq_content_color": "#ffffff",
         "faq_content_bg_color": "rgba(0,0,0,0)",
-        "custom_class_name": "custom-border"
+        "custom_class_name": ""
       }
     },
     "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3": {
