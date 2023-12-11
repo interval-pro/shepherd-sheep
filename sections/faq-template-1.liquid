@@ -28,36 +28,38 @@
           <div class="dt-sc-accordion-container {{section.settings.text_position}} {{ section.settings.block_style}}
                       {% if section.settings.enable_segmented_layout %} segmented-layout {% endif %} ">   
             {% for block in section.blocks %}   
-            {% if block.settings.title != blank  %} 
-            <div class="dt-sc-accordion-btn">
-              {% if section.settings.enable_heading_icons %}
-              {% if block.type == 'icon' %}<h5 {% if forloop.first %}class="active"{% endif %}>
-              {%- assign img_url = block.settings.icon | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-              <img class="lazyload"
-                   src="{{ 'loading.gif' | asset_url }}"
-                   data-src="{{ img_url }}"
-                   data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-                   data-aspectratio="{{ section.settings.icon.aspect_ratio }}"
-                   data-sizes="auto"            
-                   alt="{{ block.settings.title }}">            
-              <noscript>
-                {{ block.settings.icon | img_url: '480x480', scale: 2 | img_tag: block.settings.icon.alt, 'dt-sc-noscript-image' }}
-              </noscript>
-              {{ block.settings.title }}</h5>
-              {% endif %}
-              {% if block.type == 'class' %}<h5 {% if forloop.first %}class="active"{% endif %}><i class="{{block.settings.class}}"></i>{{ block.settings.title }}</h5>{% endif %}
-              {% else %}
-              <h5 {% if forloop.first %}class="active"{% endif %}>{{ block.settings.title }}</h5>
-              {% endif %} 
-            </div>        
-            {% endif %} 
-            {% if block.settings.desc != blank  %} 
-            <div class="dt-sc-accordion-content {% if forloop.first %}open{% endif %}">
-              <div class="dt-sc-accordion-content-inner">
-                <p>{{ block.settings.desc}}</p>
+              <div class="accordion-item-wrapper">
+                {% if block.settings.title != blank  %} 
+                  <div class="dt-sc-accordion-btn">
+                    {% if section.settings.enable_heading_icons %}
+                    {% if block.type == 'icon' %}<h5 {% if forloop.first %}class="active"{% endif %}>
+                    {%- assign img_url = block.settings.icon | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload"
+                         src="{{ 'loading.gif' | asset_url }}"
+                         data-src="{{ img_url }}"
+                         data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                         data-aspectratio="{{ section.settings.icon.aspect_ratio }}"
+                         data-sizes="auto"            
+                         alt="{{ block.settings.title }}">            
+                    <noscript>
+                      {{ block.settings.icon | img_url: '480x480', scale: 2 | img_tag: block.settings.icon.alt, 'dt-sc-noscript-image' }}
+                    </noscript>
+                    {{ block.settings.title }}</h5>
+                    {% endif %}
+                    {% if block.type == 'class' %}<h5 {% if forloop.first %}class="active"{% endif %}><i class="{{block.settings.class}}"></i>{{ block.settings.title }}</h5>{% endif %}
+                    {% else %}
+                    <h5 {% if forloop.first %}class="active"{% endif %}>{{ block.settings.title }}</h5>
+                    {% endif %} 
+                  </div>        
+                  {% endif %} 
+                  {% if block.settings.desc != blank  %} 
+                  <div class="dt-sc-accordion-content {% if forloop.first %}open{% endif %}">
+                    <div class="dt-sc-accordion-content-inner">
+                      <p>{{ block.settings.desc}}</p>
+                    </div>
+                  </div>
+                  {% endif %} 
               </div>
-            </div>
-            {% endif %} 
             {% endfor %}
           </div>           
           {% endif %}
