@@ -108,7 +108,7 @@
         "faq_heading_bg_color": "rgba(0,0,0,0)",
         "faq_content_color": "#ffffff",
         "faq_content_bg_color": "rgba(0,0,0,0)",
-        "custom_class_name": ""
+        "custom_class_name": "custom-border"
       }
     },
     "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3": {
