@@ -37,7 +37,7 @@
     "custom_font_family_3": "",
     "primary_color": "#304768",
     "secondary_color": "#E13D1D",
-    "tertiary_color": "#EC8562",
+    "tertiary_color": "rgba(0,0,0,0)",
     "body_bg_color": "#00142B",
     "body_text_color": "#ffffff",
     "overlay_color": "#304768",
@@ -351,14 +351,14 @@
           "enable_predictive_search": true,
           "social_icon_color": "#252525",
           "social_icon_hover_color": "#5b5b5b",
-          "social_icon_bg": "#E13D1D",
+          "social_icon_bg": "#e13d1d",
           "social_icon_hover_bg": "rgba(0,0,0,0)",
           "show_account": true,
           "show_header_cart": true,
           "show_header_wishlist": true,
           "show_header_compare": false,
           "icon_color": "#ffffff",
-          "icon_hover_color": "#EC8562",
+          "icon_hover_color": "#ec8562",
           "icon_bg": "rgba(0,0,0,0)",
           "icon_hover_bg": "rgba(0,0,0,0)",
           "togle_menu": "main-menu",
@@ -374,7 +374,7 @@
           "menu_background_image": "shopify:\/\/shop_images\/Parallax-Banner-2.jpg",
           "header_bg": "#ffffff",
           "menu_color": "#ffffff",
-          "menu_active_color": "#EC8562",
+          "menu_active_color": "#ec8562",
           "menu_active_bg": "rgba(0,0,0,0)",
           "mega_menu_bg": "#1a1111",
           "submenu_color": "#ffffff",
@@ -402,7 +402,7 @@
           "modal_popup_width": "800px",
           "dt_sc_cookie-expires": 4,
           "dt_sc_cookie-modal-delay": "1000",
-          "overlay_background_color": "#EC8562",
+          "overlay_background_color": "#ec8562",
           "overlay_background_transparency": "0.95",
           "block_text_align": "text-start",
           "enable_overlay": false,
@@ -424,7 +424,7 @@
           "button_hover_text_color": "",
           "additional_text_color": "#ffffff",
           "social_icon_color": "#ffffff",
-          "social_icon_hover_color": "#E13D1D"
+          "social_icon_hover_color": "#e13d1d"
         }
       },
       "product-recommendations": {
@@ -539,7 +539,7 @@
           "spacing_both_ends": false,
           "padding": "0,50",
           "top_space": 0,
-          "footer_bg_clr": "#00142B",
+          "footer_bg_clr": "#00142b",
           "color_opacity": 1,
           "footer_bg_img": false,
           "segmented_bg_clr": "#000000",
@@ -564,7 +564,7 @@
           "copyright_text": "",
           "copyright_link": "#",
           "copyright_link_color": "#ffffff",
-          "copyright_link_color_hover": "#EC8562"
+          "copyright_link_color_hover": "#ec8562"
         }
       },
       "gdpr-cookies": {
