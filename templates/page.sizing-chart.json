@@ -19,7 +19,7 @@
             "subheading_color": "rgba(0,0,0,0)",
             "subheading_size": "",
             "title": "Explore Our Size Chart for the Perfect Sizing",
-            "heading_color": "#F4F4F4",
+            "heading_color": "#f4f4f4",
             "heading_size": "54",
             "desc": "",
             "desc_color": "",
@@ -84,10 +84,16 @@
         "padding": "0,0",
         "margin": "10,100"
       }
+    },
+    "991c75af-bd82-4456-a01a-10176fe7d6fb": {
+      "type": "sizing-chart",
+      "settings": {
+      }
     }
   },
   "order": [
     "a3a6308d-f8ba-4a31-8c57-5614ef1f93ba",
-    "main"
+    "main",
+    "991c75af-bd82-4456-a01a-10176fe7d6fb"
   ]
 }
