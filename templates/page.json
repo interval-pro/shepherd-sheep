@@ -16,7 +16,7 @@
     "f21d09ce-efb7-487b-bcf6-f97bcf7e8bdf": {
       "type": "custom-content",
       "custom_css": [
-        ". {color: red !important;}"
+
       ],
       "settings": {
         "full": false,
@@ -42,7 +42,7 @@
         "section_button_hover_bg_color": "#00142B",
         "section_button_hover_text_color": "#00142B",
         "heading_position": "text-center",
-        "html": "<!--<div id='insta-feed'><\/div>-->",
+        "html": "",
         "custom_class_name": ""
       }
     }
