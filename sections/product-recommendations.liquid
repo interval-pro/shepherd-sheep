@@ -15,11 +15,19 @@
         data-limit="4">
         {%- if recommendations.products_count > 0 -%}
           <div class="dT_VProdRecommendations">
-            <ul class="dt-sc-column four-column">
+            <ul class="dt-sc-column three-column">
               {%- for product in recommendations.products -%}
-                {% include 'product-grid-item'
-                  , product: product
-                  , imageSize: 'large' %}
+                <div class="recomended-product-wrapper">
+                  {% include 'product-grid-item', product: product, imageSize: 'large' %}
+                  <div class="descript">
+                    <div class="product-title">
+                      {{ product.title }}
+                    </div>
+                    <div class="product-price">
+                      {{ product.price | money_with_currency }}
+                    </div>
+                  </div>
+                </div>
               {%- endfor -%}
             </ul>
           </div>
@@ -35,9 +43,30 @@
     background-color: {{ section.settings.background_color }};
     padding: 50px 0;
   }
+
+  .recomended-products-section-wrapper .three-column .recomended-product-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recomended-products-section-wrapper .three-column .recomended-product-wrapper .descript {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  }
+  .recomended-products-section-wrapper .three-column .recomended-product-wrapper .descript .product-title {
+        margin: 2rem 0;
+        /* color: {{ section.settings.product_title_color }}; */
+  }
+
+  .recomended-products-section-wrapper .three-column .recomended-product-wrapper .descript .product-price {
+  }
   .recomended-products-section-wrapper .section-header__title {
     color: {{ section.settings.heading_color }};
   }
+
   .dT_VProdRecommendations {
     margin-top: 40px;
   }
@@ -112,14 +141,12 @@
       {
         "type": "color",
         "id": "heading_color",
-        "label": "Heading Color",
-        "default": "#000000"
+        "label": "Heading Color"
       },
       {
         "type": "color",
         "id": "background_color",
-        "label": "Background Color",
-        "default": "#ffffff"
+        "label": "Background Color"
       }
     ]
   }
