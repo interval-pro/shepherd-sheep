@@ -1,5 +1,25 @@
 {
   "sections": {
+    "7b7b5bff-5d9e-4681-84a8-a90550de547e": {
+      "type": "divider",
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "padding": "50,50",
+        "margin": "0,0",
+        "divider_style": "shadow",
+        "divider_alignment": "text-center",
+        "section_heading": "Refer a friend",
+        "heading_typography": "h2",
+        "divider_bottom_width": 5,
+        "divider_height": 1,
+        "divider_arrow_alignment": -50,
+        "divider_bottom_alignment": -50,
+        "section_heading_color": "",
+        "divider_color": "",
+        "custom_class_name": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "custom_css": [
@@ -14,6 +34,7 @@
     }
   },
   "order": [
+    "7b7b5bff-5d9e-4681-84a8-a90550de547e",
     "main"
   ]
 }

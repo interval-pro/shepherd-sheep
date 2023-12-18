@@ -36,7 +36,7 @@
     "custom_font_script_3": "",
     "custom_font_family_3": "",
     "primary_color": "#304768",
-    "secondary_color": "#E13D1D",
+    "secondary_color": "rgba(0,0,0,0)",
     "tertiary_color": "rgba(0,0,0,0)",
     "body_bg_color": "#00142B",
     "body_text_color": "#ffffff",
