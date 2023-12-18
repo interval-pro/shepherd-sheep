@@ -42,58 +42,59 @@
   </div>
 </div>
 <style>
-  .sizing-chart-section {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 0;
-    background-color: {{ section.settings.bg_color }};
-  }
+    .sizing-chart-section {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        background-color: {{ section.settings.bg_color }};
+    }
 
-  .sizing-chart-section .sizing-chart-title {
-    text-align: center;
-    padding: 2rem;
-    color: {{ section.settings.title_color }}
-  }
+    .sizing-chart-section .sizing-chart-title {
+        text-align: center;
+        padding: 2rem;
+        color: {{ section.settings.title_color }}
+    }
 
-  .sizing-chart-section .sizing-chart-table {
-    margin: 0 auto;
-    max-width: 50rem;
-    width: 50rem;
-  }
-  .sizing-chart-section .sizing-chart-table table {
-    width: 100%;
-    border-collapse: separate;
-    overflow: hidden;
-    border-radius: 20px;
-    color: {{ section.settings.table_font_color }};
-  }
+    .sizing-chart-section .sizing-chart-table {
+        margin: 0 auto;
+        max-width: 50rem;
+        width: 50rem;
+    }
+    .sizing-chart-section .sizing-chart-table table {
+        width: 100%;
+        border-collapse: separate;
+        overflow: hidden;
+        border-radius: 20px;
+        color: {{ section.settings.table_font_color }};
+    }
 
-  .sizing-chart-section .sizing-chart-table table th {}
-.sizing-chart-section .sizing-chart-table table thead tr th {
-  padding: 1rem;
-}
+    .sizing-chart-section .sizing-chart-table table th {}
+    .sizing-chart-section .sizing-chart-table table thead tr th {
+        padding: 1rem;
+    }
 
-.sizing-chart-section .sizing-chart-table table {
-  border-collapse: separate;
-  border: solid {{ section.settings.border_color }} 1px;
-  border-radius: 20px;
-}
+    .sizing-chart-section .sizing-chart-table table {
+        border-collapse: separate;
+        border: solid {{ section.settings.border_color }} 1px;
+        border-radius: 20px;
+    }
 
-.sizing-chart-section .sizing-chart-table td,
-.sizing-chart-section .sizing-chart-table th {
-  border-left: solid {{ section.settings.border_color }} 1px;
-  border-top: solid {{ section.settings.border_color }} 1px;
-}
+    .sizing-chart-section .sizing-chart-table td,
+    .sizing-chart-section .sizing-chart-table th {
+        border: none;
+        border-left: solid {{ section.settings.border_color }} 1px;
+        border-top: solid {{ section.settings.border_color }} 1px;
+    }
 
-.sizing-chart-section .sizing-chart-table th {
-  background-color: {{ section.settings.header_color}};
-  border-top: none;
-}
+    .sizing-chart-section .sizing-chart-table th {
+        background-color: {{ section.settings.header_color}};
+        border-top: none;
+    }
 
-.sizing-chart-section .sizing-chart-table td:first-child,
-.sizing-chart-section .sizing-chart-table th:first-child {
-  border-left: none;
-}
+    .sizing-chart-section .sizing-chart-table td:first-child,
+    .sizing-chart-section .sizing-chart-table th:first-child {
+        border-left: none;
+    }
 
 </style>
 {% schema %}
