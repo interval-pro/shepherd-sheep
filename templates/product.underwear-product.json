@@ -154,12 +154,13 @@
         "margin": "0,0",
         "heading": "Recommended Products",
         "heading_position": "text-center",
-        "heading_color": "#E13D1D",
+        "heading_color": "#e13d1d",
         "background_color": "#f4f4f4"
       }
     },
     "82b712cc-f8ee-47f4-b250-855b5fc190bf": {
       "type": "divider",
+      "disabled": true,
       "settings": {
         "full": false,
         "spacing_both_ends": false,
