@@ -127,7 +127,7 @@
         "show_quantity_selector": true,
         "show_checkout": true,
         "hide_addtocart": false,
-        "show_wishlist": true,
+        "show_wishlist": false,
         "show_share_buttons": true,
         "tab_position": "right",
         "tab_style": "toggle",
@@ -140,7 +140,7 @@
         "product_tab3_heading": "Reviews",
         "enable_enquiry": true,
         "enable_sticky_cart": true,
-        "show_adv_product": true,
+        "show_adv_product": false,
         "choose_label": "Choose style",
         "collection": "advanced-product-tagging"
       }
@@ -349,12 +349,12 @@
       "type": "sizing-chart",
       "settings": {
         "sizing_chart_title": "Sizing Chart",
-        "bg_color": "#F4F4F4",
+        "bg_color": "#f4f4f4",
         "title_color": "#304768",
-        "table_header_bg_color": "#E13D1D",
+        "table_header_bg_color": "#e13d1d",
         "table_font_color": "#ffffff",
-        "border_color": "#F4F4F4",
-        "cell_color": "#EC8562"
+        "border_color": "#f4f4f4",
+        "cell_color": "#ec8562"
       }
     }
   },
