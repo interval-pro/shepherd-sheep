@@ -86,8 +86,12 @@
         border-top: solid {{ section.settings.border_color }} 1px;
     }
 
+    .sizing-chart-section .sizing-chart-table td {
+        background-color: {{ section.settings.cell_color }};
+    }
+
     .sizing-chart-section .sizing-chart-table th {
-        background-color: {{ section.settings.header_color}};
+        background-color: {{ section.settings.table_header_bg_color}};
         border-top: none;
     }
 
@@ -101,35 +105,40 @@
   {
     "name": "Pesh Sizing Chart Section",
     "settings": [
-      {
-        "type": "text",
-        "id": "sizing_chart_title",
-        "label": "Sizing Chart Title",
-        "default": "Sizing Chart"
-      }, {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background Color"
-      }, {
-        "type": "color",
-        "id": "title_color",
-        "label": "Title Color"
-      },
-      {
-        "type": "color",
-        "id": "header_color",
-        "label": "Header Color"
-      },
-      {
-        "type": "color",
-        "id": "table_font_color",
-        "label": "Table Font Color"
-      },
-      {
-        "type": "color",
-        "id": "border_color",
-        "label": "Border Color"
-      }
+        {
+            "type": "text",
+            "id": "sizing_chart_title",
+            "label": "Sizing Chart Title",
+            "default": "Sizing Chart"
+        }, {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color"
+        }, {
+            "type": "color",
+            "id": "title_color",
+            "label": "Title Color"
+        },
+        {
+            "type": "color",
+            "id": "table_header_bg_color",
+            "label": "Table Header BG Color"
+        },
+        {
+            "type": "color",
+            "id": "table_font_color",
+            "label": "Table Font Color"
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+        },
+        {
+            "type": "color",
+            "id": "cell_color",
+            "label": "Cell Color"
+        }
     ],
     "presets": [
       {
