@@ -238,10 +238,10 @@
         "template--20256507855149__3062e622-0503-4e83-8125-d19944e0ba66-content-2"
       ],
       "settings": {
-        "full": false,
+        "full": true,
         "spacing_both_ends": false,
         "padding": "250,250",
-        "margin": "60,60",
+        "margin": "0,0",
         "show_background_image": true,
         "background_image": "shopify:\/\/shop_images\/Banner-slider-v4.2.jpg",
         "background_style": "none",
@@ -249,13 +249,13 @@
         "enable_overlay": false,
         "background_color": "#d8000c",
         "overlay_transparency": "0.2",
-        "section_heading": "",
+        "section_heading": "PREMIUM MATERIALS",
         "section_sub_heading": "",
         "section_description": "",
         "section_button_text": "",
         "section_button_link": "",
-        "section_heading_color": "",
-        "section_sub_heading_color": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "#ffffff",
         "section_description_color": "",
         "section_button_bg_color": "",
         "section_button_text_color": "",
@@ -265,7 +265,7 @@
         "column_gap": "30",
         "border_radius": "",
         "content_width": "50\/50",
-        "lap_content_width": "40\/60",
+        "lap_content_width": "50\/50",
         "custom_class_name": ""
       }
     },
