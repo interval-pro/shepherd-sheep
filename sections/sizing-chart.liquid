@@ -46,6 +46,7 @@
         display: flex;
         flex-direction: column;
         background-color: {{ section.settings.bg_color }};
+        padding: 0 3rem;
         padding-bottom: 5rem;
     }
 
@@ -59,8 +60,8 @@
 
     .sizing-chart-section .sizing-chart-table {
         margin: 0 auto;
-        max-width: 50rem;
-        width: 50rem;
+        max-width: 100%;
+        width: 100rem;
     }
     .sizing-chart-section .sizing-chart-table table {
         width: 100%;
@@ -72,7 +73,7 @@
 
     .sizing-chart-section .sizing-chart-table table th {}
     .sizing-chart-section .sizing-chart-table table thead tr th {
-        padding: 1rem;
+        padding: 3rem;
     }
 
     .sizing-chart-section .sizing-chart-table table {
@@ -90,6 +91,7 @@
 
     .sizing-chart-section .sizing-chart-table td {
         background-color: {{ section.settings.cell_color }};
+        padding: 1.5rem;
     }
 
     .sizing-chart-section .sizing-chart-table th {
