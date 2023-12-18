@@ -1,6 +1,6 @@
 <div class="sizing-chart-section">
   <div class="sizing-chart-title">
-    <h2>{{ section.settings.sizing_chart_title }}</h2>
+    {{ section.settings.sizing_chart_title }}
   </div>
   <div class="sizing-chart-table">
     <table>
@@ -45,14 +45,16 @@
     .sizing-chart-section {
         display: flex;
         flex-direction: column;
-        padding: 5rem 0;
         background-color: {{ section.settings.bg_color }};
+        padding-bottom: 5rem;
     }
 
     .sizing-chart-section .sizing-chart-title {
         text-align: center;
-        padding: 2rem;
-        color: {{ section.settings.title_color }}
+        padding: 5rem;
+        color: {{ section.settings.title_color }};
+        font-weight: 700;
+        font-size: 40px;
     }
 
     .sizing-chart-section .sizing-chart-table {
