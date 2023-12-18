@@ -88,45 +88,15 @@
         "margin": "0,0"
       }
     },
-    "f21d09ce-efb7-487b-bcf6-f97bcf7e8bdf": {
-      "type": "custom-content",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "full": false,
-        "spacing_both_ends": true,
-        "padding": "50,50",
-        "margin": "0,0",
-        "show_background_image": false,
-        "background_style": "fixed",
-        "background_size": "auto",
-        "enable_overlay": true,
-        "background_color": "#f4f4f4",
-        "overlay_transparency": "1",
-        "section_heading": "REFUND POLICY",
-        "section_sub_heading": "Returns & Exchanges",
-        "section_description": "For any unworn\/ unwashed products with all original tags and labels attached, you can return it for a refund, or exchange for something of equal value within 30 days of receipt. Just contact us via this form ( link to form) and we will take it from there!",
-        "section_button_text": "",
-        "section_button_link": "",
-        "section_heading_color": "#e13d1d",
-        "section_sub_heading_color": "#304768",
-        "section_description_color": "#304768",
-        "section_button_bg_color": "#ec8562",
-        "section_button_text_color": "#e13d1d",
-        "section_button_hover_bg_color": "#00142B",
-        "section_button_hover_text_color": "#00142B",
-        "heading_position": "text-center",
-        "html": "",
-        "custom_class_name": ""
-      }
-    },
     "eeedb2e7-2075-49f6-bd2c-bc2992f2ab63": {
       "type": "home-deal-banner",
+      "custom_css": [
+        ".home-deal-banner {padding: 80px;}"
+      ],
       "settings": {
         "full": true,
         "spacing_both_ends": false,
-        "padding": "0,0",
+        "padding": "",
         "margin": "0,0",
         "show_background_image": false,
         "background_style": "none",
@@ -173,7 +143,6 @@
   "order": [
     "6d3bc4df-2ba4-458c-84c7-8db216b1429c",
     "main",
-    "f21d09ce-efb7-487b-bcf6-f97bcf7e8bdf",
     "eeedb2e7-2075-49f6-bd2c-bc2992f2ab63"
   ]
 }
