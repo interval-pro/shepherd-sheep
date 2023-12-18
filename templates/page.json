@@ -16,7 +16,7 @@
     "f21d09ce-efb7-487b-bcf6-f97bcf7e8bdf": {
       "type": "custom-content",
       "custom_css": [
-        "h4 {color: #fff !important;}"
+        ". {color: red !important;}"
       ],
       "settings": {
         "full": false,
