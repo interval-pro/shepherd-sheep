@@ -155,7 +155,8 @@
         "heading": "Recommended Products",
         "heading_position": "text-center",
         "heading_color": "#e13d1d",
-        "background_color": "#f4f4f4"
+        "background_color": "#f4f4f4",
+        "product_title_color": "#304768"
       }
     },
     "82b712cc-f8ee-47f4-b250-855b5fc190bf": {
