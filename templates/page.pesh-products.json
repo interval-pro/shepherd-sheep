@@ -1,10 +1,12 @@
 {
     "sections": {
       "main": {
-        "type": "collection-pesh-products"
+        "type": "main-page",
+        "settings": {}
       }
     },
     "order": [
       "main"
     ]
   }
+  
