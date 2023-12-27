@@ -1,0 +1,74 @@
+<div class="dt-sc-section-wrapper pesh-product-page">
+    <div class="select-collection">
+        <div class="our-products-text">
+            OUR PRODUCTS
+        </div>
+        <div class="collections-select-list">
+            <div class="collections-select-item">
+                <img src="{{ 'boxer-briefs.svg' | asset_url  }}" alt="">
+                <span>Boxer Briefs</span>
+            </div>
+            <div class="collections-select-item">
+                <img src="{{ 'multipacks.svg' | asset_url  }}" alt="">
+                <span>Multipacks</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pesh-product-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: {{ section.settings.background_color }};
+        padding: 3rem 0;
+    }
+    .pesh-product-page .select-collection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .pesh-product-page .select-collection .our-products-text {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .pesh-product-page .select-collection .collections-select-list {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .pesh-product-page .select-collection .collections-select-list .collections-select-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    .pesh-product-page .select-collection .collections-select-list .collections-select-item img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 100%;
+    }
+    .pesh-product-page .select-collection .collections-select-list .collections-select-item span {
+    
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Pesh Product Page Main Section",
+    "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        }
+    ]
+}
+{% endschema %}
