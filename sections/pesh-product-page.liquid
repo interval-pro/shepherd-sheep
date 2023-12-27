@@ -1,74 +1,142 @@
 <div class="dt-sc-section-wrapper pesh-product-page">
-    <div class="select-collection">
-        <div class="our-products-text">
-            OUR PRODUCTS
-        </div>
-        <div class="collections-select-list">
-            <div class="collections-select-item">
-                <img src="{{ 'boxer-briefs.svg' | asset_url  }}" alt="">
-                <span>Boxer Briefs</span>
-            </div>
-            <div class="collections-select-item">
-                <img src="{{ 'multipacks.svg' | asset_url  }}" alt="">
-                <span>Multipacks</span>
-            </div>
-        </div>
+  <div class="select-collection">
+    <div class="our-products-text">
+      OUR PRODUCTS
     </div>
+    <div class="collections-select-list">
+      <div class="collections-select-item selected-collection" data-collection="boxer-briefs">
+        <img src="{{ 'boxer-briefs.svg' | asset_url  }}" alt="boxer-briefs">
+        <img
+          src="{{ 'boxer-briefs-selected.svg' | asset_url  }}"
+          alt="Boxer Briefs Selected"
+          class="selected-collection-img">
+
+        <span>Boxer Briefs</span>
+      </div>
+      <div class="collections-select-item" data-collection="multipacks">
+        <img src="{{ 'multipacks.svg' | asset_url  }}" alt="Multipacks">
+        <img
+          src="{{ 'multipacks-selected.svg' | asset_url  }}"
+          alt="Multipacks Selected"
+          class="selected-collection-img">
+        <span>Multipacks</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="selected-collection-wrapper">
+    <div
+      id="collection-boxer-briefs"
+      class="collection-content"
+      style="display: none;">
+      {% for product in collections['boxer-briefs'].products %}
+        <!-- Render product details -->
+      {% endfor %}
+    </div>
+
+    <div
+      id="collection-multipacks"
+      class="collection-content"
+      style="display: none;">
+      {% for product in collections['multipacks'].products %}
+        <!-- Render product details -->
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const collectionItems = document.querySelectorAll('.collections-select-item');
+  
+    collectionItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            const collectionName = item.getAttribute('data-collection');
+            showCollection(collectionName);
+        });
+    });
+  
+    const showCollection = (collectionName) => {
+        const allCollectionContents = document.querySelectorAll('.collection-content');
+        allCollectionContents.forEach((content) => content.style.display = 'none');
+        document.getElementById('collection-' + collectionName).style.display = 'flex';
+
+        collectionItems.forEach((item) => item.classList.remove('selected-collection'));
+        const selectedEl = document.querySelector('[data-collection="' + collectionName + '"]');
+        selectedEl.classList.add('selected-collection');
+    }
+  
+    showCollection('boxer-briefs');
+  });
+</script>
+
 <style>
-    .pesh-product-page {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: {{ section.settings.background_color }};
-        padding: 3rem 0;
-    }
-    .pesh-product-page .select-collection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+  .pesh-product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ section.settings.background_color }};
+    padding: 3rem 0;
+  }
+  .pesh-product-page .select-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    }
-    .pesh-product-page .select-collection .our-products-text {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .pesh-product-page .select-collection .collections-select-list {
-        display: flex;
-        gap: 5rem;
-    }
+  .pesh-product-page .select-collection .our-products-text {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .pesh-product-page .select-collection .collections-select-list {
+    display: flex;
+    gap: 5rem;
+  }
 
-    .pesh-product-page .select-collection .collections-select-list .collections-select-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px;
-        gap: 1rem;
-        cursor: pointer;
-    }
-    .pesh-product-page .select-collection .collections-select-list .collections-select-item img {
-        width: 7rem;
-        height: 7rem;
-        border-radius: 100%;
-    }
-    .pesh-product-page .select-collection .collections-select-list .collections-select-item span {
-    
-    }
+  .pesh-product-page .select-collection .collections-select-list .collections-select-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .pesh-product-page .select-collection .collections-select-list .collections-select-item img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+  }
+  .pesh-product-page .select-collection .collections-select-list .collections-select-item .selected-collection-img {
+    display: none;
+  }
+  .pesh-product-page .select-collection .collections-select-list .collections-select-item span {
+    color: #3D557A;
+  }
+
+  .pesh-product-page .select-collection .collections-select-list .selected-collection span {
+    color: unset;
+  }
+  .pesh-product-page .select-collection .collections-select-list .selected-collection img {
+    display: none;
+  }
+  .pesh-product-page .select-collection .collections-select-list .selected-collection .selected-collection-img {
+    display: block;
+  }
 </style>
 
 {% schema %}
-{
+  {
     "name": "Main",
     "settings": [
-        {
-            "type": "color",
-            "id": "background_color",
-            "label": "Background Color"
-        }
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color"
+      }
     ]
-}
+  }
 {% endschema %}
