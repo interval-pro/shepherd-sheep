@@ -1,0 +1,10 @@
+{
+    "sections": {
+      "main": {
+        "type": "collection-pesh-products"
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
