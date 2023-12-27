@@ -30,7 +30,28 @@
       class="collection-content"
       style="display: none;">
       {% for product in collections['boxer-briefs'].products %}
-        <span>a</span>
+        <div class="product">
+          <div class="product-image">
+            <a href="{{ product.url | within: collection }}">
+              <img src="{{ product.featured_image | img_url: '300x' }}" alt="{{ product.featured_image.alt | escape }}">
+              <div class="sizes-container">
+                {% for variant in product.variants %}
+                    <div class="size">
+                      {{ variant.title }}
+                    </div>
+                  {% endfor %}
+              </div>
+            </a>
+          </div>
+          <div class="descript">
+            <div class="product-title">
+              {{ product.title }}
+            </div>
+            <div class="product-price">
+              {{ product.price | money_with_currency }}
+            </div>
+          </div>
+        </div>
       {% endfor %}
     </div>
 
@@ -60,7 +81,7 @@
         const allCollectionContents = document.querySelectorAll('.collection-content');
         allCollectionContents.forEach((content) => content.style.display = 'none');
         document.getElementById('collection-' + collectionName).style.display = 'flex';
-
+  
         collectionItems.forEach((item) => item.classList.remove('selected-collection'));
         const selectedEl = document.querySelector('[data-collection="' + collectionName + '"]');
         selectedEl.classList.add('selected-collection');
@@ -78,6 +99,7 @@
     justify-content: center;
     background-color: {{ section.settings.background_color }};
     padding: 3rem 0;
+    gap: 3rem;
   }
   .pesh-product-page .select-collection {
     display: flex;
@@ -126,6 +148,59 @@
   .pesh-product-page .select-collection .collections-select-list .selected-collection .selected-collection-img {
     display: block;
   }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .pesh-product-page .selected-collection-wrapper .collection-content .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .product-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .product-image:hover .sizes-container {
+    transform: translateY(-100%);
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .product-image a .sizes-container {
+    background-color: hsla(216, 33%, 36%, 0.45);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    transition: transform 200ms ease-in-out;
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-shadow: black 2px 0px 5px;
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .descript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .descript .product-title {
+    color: #3D557A;
+    font-weight: 500;
+  }
+
+  .pesh-product-page .selected-collection-wrapper .collection-content .product .descript .product-price {
+    font-size: 0.9rem;
+  }
+
 </style>
 
 {% schema %}
