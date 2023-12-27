@@ -1,12 +1,13 @@
 {
-    "sections": {
-      "main": {
-        "type": "pesh-product-page",
-        "settings": {}
+  "sections": {
+    "main": {
+      "type": "pesh-product-page",
+      "settings": {
+        "background_color": "#F4F4F4"
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
-  
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
