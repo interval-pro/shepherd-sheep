@@ -109,7 +109,7 @@
         "cc198ead-a891-4147-b2e3-4d6222e238a0"
       ],
       "settings": {
-        "text_color": "#1370de",
+        "default_text_color": "#460b0b",
         "full": false,
         "spacing_both_ends": true,
         "padding": "0,0",
