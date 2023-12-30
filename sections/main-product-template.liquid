@@ -344,9 +344,6 @@
   .quickview-description .product-price, 
   .product-item-caption .product-price{ display: block; margin: 0;}
 
-  .product-description-product-template .product-price .product-price-current {
-    color: {{ settings.price_text_color }};
-  }
 
   .product-description-product-template .product-price .price-list { display: flex; flex-wrap: wrap; align-items: center; margin:0; }
 
@@ -382,6 +379,11 @@
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide {pointer-events:none;}
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide.swiper-slide-active {pointer-events:all;} 
 /*   .row.fbt_hide_primary_cart_btn .product_payments_btns {display:none !important;} */
+
+
+ .product-price-current .money {
+    color: {{ settings.price_text_color  }}
+  }
 </style>
 
 
