@@ -22,13 +22,11 @@
         },
         "db797c60-1d3c-4034-b55d-151ec5cae2d7": {
           "type": "deal",
-          "disabled": true,
           "settings": {
           }
         },
         "19be33f4-40db-451a-b5c2-40daa748ac9a": {
           "type": "fbt",
-          "disabled": true,
           "settings": {
           }
         },
@@ -40,7 +38,6 @@
         },
         "22c4f5eb-0a61-4ed2-865c-ec6f809e783c": {
           "type": "notify-form",
-          "disabled": true,
           "settings": {
           }
         },
@@ -52,7 +49,6 @@
         },
         "f26a6ae3-78b7-4d9f-885e-fcbc49deba02": {
           "type": "menu",
-          "disabled": true,
           "settings": {
             "title": "Custom Menu",
             "linklist": ""
@@ -60,7 +56,6 @@
         },
         "2ff9f47d-7f11-4be0-b8ec-143624b3ca83": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "title": "New Arrivals",
             "collection": "underwear",
