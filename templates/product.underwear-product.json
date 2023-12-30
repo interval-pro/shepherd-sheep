@@ -131,7 +131,7 @@
         "show_wishlist": false,
         "show_share_buttons": true,
         "tab_position": "bottom",
-        "tab_style": "toggle",
+        "tab_style": "tab",
         "product_tab1": false,
         "product_tab1_heading": "Description",
         "product_tab2": false,
