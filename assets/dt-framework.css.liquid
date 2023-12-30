@@ -362,7 +362,7 @@ label.deal-lable.product-label{margin-bottom:10px;}
 .has-sidebar .collection-grid, .has-sidebar div[class*="template-content"]{ width:calc( 100% - {{settings.sidebar_width }}px); float:left; }
 .left-sidebar { display: flex; flex-direction: row-reverse; }
 .left-sidebar > .sidebar { margin-right: 50px; }
-.right-sidebar > .sidebar { margin-left: 50px; }
+.auth-container-right-sidebar > .sidebar { margin-left: 50px; }
 
 div[class*="sidebar"] .sidebar{ min-width:250px; width:calc( {{ settings.sidebar_width }}px - 50px ); float:left; }
 div:not(.full-width) > div[class*="template-content"]{ min-width:calc( 100% - {{settings.sidebar_width }}px); float:left; }
@@ -1470,51 +1470,54 @@ button.mfp-close:before,
   padding: 2rem;
 }
 
-.user-account .grid__item:first-child {
+.user-account .auth-container-left-side {
   background-color: #C23E24;
   color: var(--color-5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
   text-align: center;
   gap: 2rem;
 }
 
-.user-account .grid__item:first-child h5 {
+.user-account .auth-container-left-side h5 {
   color: var(--color-5);
   font-weight: bold;
 }
 
-.user-account .grid__item:first-child button {
+.user-account .auth-container-left-side .p-button {
   background-color: unset;
   border: 2px solid var(--color-5);
 }
+.user-account .auth-container-left-side .p-button a {
+  color: var(--color-5);
+}
 
-.user-account .grid__item:first-child button:hover {
+.user-account .auth-container-left-side .p-button:hover {
   background-color: var(--color-3);
   color: var(--DTform_BG);
 }
 
-.user-account .grid__item:last-child form {
+.user-account .auth-container-right-side form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.user-account .grid__item:last-child h5 {
+.user-account .auth-container-right-side h5 {
   font-weight: bold;
 }
 
-.user-account .grid__item:last-child form input[type=email],
-.user-account .grid__item:last-child form input[type=password] {
+.user-account .auth-container-right-side form input[type=email],
+.user-account .auth-container-right-side form input[type=password] {
   background-color: unset;
   border: 2px solid var(--DTColor_Heading);
   border-radius: var(--DT_Button_Border_Radius);
 }
 
-.user-account .grid__item:last-child form a {
+.user-account .auth-container-right-side form a {
   text-decoration: underline;
   color: var(--DTPrimaryColor);
   margin-bottom: 3rem;
@@ -1770,7 +1773,7 @@ form[class*="shopify-product"] .dT_VProdWishList a.add-wishlist:before { content
         /*div[class*="sidebar"] .sidebar { min-width:calc(.75 *{{settings.sidebar_width }}px); width: calc(.75 *{{settings.sidebar_width }}px); } */
         div:not(.full-width) > div[class*="template-content"] { min-width:calc(.75 *{{settings.sidebar_width }}px); }
         .left-sidebar > .sidebar { margin-right: 40px; }
-        .right-sidebar > .sidebar { margin-left: 40px; }
+        .auth-container-right-sidebar > .sidebar { margin-left: 40px; }
 
         .dt-sc-swiper-slider.swiper-container.inside_element .swiper-pagination {
           top: 18%;

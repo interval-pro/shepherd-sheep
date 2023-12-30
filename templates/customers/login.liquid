@@ -1,15 +1,18 @@
 <div class="container">
   <div class="user-account">
-    <div class="grid__item">
+    <div class="grid__item auth-container-left-side">
       <h5>
         CREATE ACCOUNT
       </h5>
       <p>
         Enter your personal details and start journey with us
       </p>
-      <button class="dt-sc-btn">Sign Up</button>
+      {% comment %} <button>Sign Up</button> {% endcomment %}
+      <p class="dt-sc-btn p-button">
+        {{ 'layout.customer.create_account' | t | customer_register_link }}
+      </p>
     </div>
-    <div class="grid__item">
+    <div class="grid__item auth-container-right-side">
 
       {% comment %}
       If a user has successfully requested a new password, the form.posted_successfully? variable
