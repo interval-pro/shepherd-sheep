@@ -1,10 +1,33 @@
 <div id="CartDrawer" class="drawer drawer--right">
   <div class="drawer__header">
-    <span class="drawer__close js-drawer-close dt-sc-btn close-icon">
-     
-    </span>
-    <h4>{{ 'cart.general.title' | t }}</h4>
+    <span class="drawer__close js-drawer-close dt-sc-btn close-icon"> </span>
+    <h6>{{ 'cart.general.title' | t }}</h6>
   </div>
-  <div id="CartContainer"></div>
+  {% comment %} {% if cart.item_count > 0 %}
+    <div class="good-choice">
+      <h5>GOOD CHOICE!</h5>
+      <p> Your item was sucesssfully added to shopping cart</p>
+    </div>'
+  {% endif %} {% endcomment %}
+  <div id="CartContainer">
+
+  </div>
 </div>
 
+<style>
+  .drawer__header h6 {
+    font-weight: bold;
+    color: var(--DTPrimaryColor);
+  }
+
+  /* .drawer .good-choice {
+    background-color: var(--DTColor_Heading);
+    color: white;
+    padding: 1rem;
+  }
+  .drawer .good-choice h5 {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+  }
+</style> */
