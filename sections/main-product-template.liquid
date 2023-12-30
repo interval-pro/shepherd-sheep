@@ -383,7 +383,7 @@
 
 // get the settings fromthe block color and use that
  .product-price-current .money {
-    color: {{block.settings.price_text_color}};
+    color: {{ settings.text_color }};
   }
 </style>
 
@@ -406,6 +406,12 @@
 "name": "Product pages",
 "class": "main-product-template",
 "settings": [
+  {
+    "type": "color",
+    "id": "text_color",
+    "label": "Text color",
+    "default": "#000000"
+  },
 {
 "type": "checkbox",
 "id": "full",
@@ -730,14 +736,7 @@
 {
 "type": "price",
 "name": "Price",
-"limit": 1,
-"settings": [
-  {
-    "type": "color",
-    "id": "price_text_color",
-    "label": "Price text color"
-  }
-]
+"limit": 1
 },
 
 {
