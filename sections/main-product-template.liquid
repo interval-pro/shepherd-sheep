@@ -379,8 +379,8 @@
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide {pointer-events:none;}
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide.swiper-slide-active {pointer-events:all;} 
 /*   .row.fbt_hide_primary_cart_btn .product_payments_btns {display:none !important;} */
-.product-item-caption-white {
-  color: {{ settings.text_color }};
+.product-template-content {
+  color: {{ settings.default_text_color }} !important;
 }
 </style>
 
@@ -405,9 +405,8 @@
 "settings": [
   {
     "type": "color",
-    "id": "text_color",
-    "label": "Text color",
-    "default": "#000000"
+    "id": "default_text_color",
+    "label": "Text color"
   },
 {
 "type": "checkbox",
