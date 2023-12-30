@@ -337,6 +337,26 @@
     color: {{ section.settings.default_text_color }}
   }
 
+  .product-attributes .trigger-pop-up {
+    color: {{ section.settings.default_text_color }};
+  }
+  .product-item-caption-qty input.input-number,
+  .product-item-caption-qty button {
+    background-color: unset !important;
+    color: {{ section.settings.default_text_color }} !important;
+    border: 1px solid {{ section.settings.default_text_color }} !important;
+  }
+  .product-item-caption-qty button:first-child {
+    border-right:none !important;
+  }
+
+  .product-item-caption-qty button:last-child {
+    border-left:none !important;
+  }
+
+  button.dT_AddToCart {
+    background-color: unset;
+  }
   @media only screen and (min-width: 1200px) {
 
     #shopify-section-{{section.id}}.main-product-template .row > div { margin-top:{{margin_top}}px; margin-bottom:{{margin_bottom}}px;padding-top:{{padding_top}}px; padding-bottom:{{padding_bottom}}px; } }
@@ -386,6 +406,7 @@
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide {pointer-events:none;}
   .main-swiper-container.swiper-gallery-inline-slider .swiper-slide.swiper-slide-active {pointer-events:all;} 
 /*   .row.fbt_hide_primary_cart_btn .product_payments_btns {display:none !important;} */
+
 
 </style>
 
