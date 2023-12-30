@@ -381,8 +381,9 @@
 /*   .row.fbt_hide_primary_cart_btn .product_payments_btns {display:none !important;} */
 
 
+// get the settings fromthe block color and use that
  .product-price-current .money {
-    color: {{ settings.price_text_color  }}
+    color: {{block.settings.price_text_color}};
   }
 </style>
 
