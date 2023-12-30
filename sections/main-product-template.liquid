@@ -330,7 +330,8 @@
 
 <style>
   .product-template-content {
-    color: {{ section.settings.default_text_color }}
+    color: {{ section.settings.default_text_color }};
+    margin-top: 5rem;
   }
 
   .product-description-product-template .product-price li .money {
@@ -354,6 +355,11 @@
     border-left:none !important;
   }
 
+ .sub-total, 
+ .product-meta-block
+  {
+    margin: 0 !important
+  }
   button.dT_AddToCart {
     background-color: unset;
   }
