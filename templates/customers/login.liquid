@@ -1,6 +1,15 @@
 <div class="container">
   <div class="user-account">
     <div class="grid__item">
+      <h5>
+        CREATE ACCOUNT
+      </h5>
+      <p>
+        Enter your personal details and start journey with us
+      </p>
+      <button class="dt-sc-btn">Sign Up</button>
+    </div>
+    <div class="grid__item">
 
       {% comment %}
       If a user has successfully requested a new password, the form.posted_successfully? variable
@@ -11,7 +20,9 @@
       <div class="note form-success" id="ResetSuccess" style="display:none;">
         {{ 'customer.recover_password.success' | t }}
       </div>
-
+      <h5 class="login-title">
+        Sign In
+      </h5>
       <div id="CustomerLoginForm">
         {% form 'customer_login', class: 'customer_login' %}
 
@@ -27,10 +38,14 @@
 
         {% endif %}
 
+        {% if form.password_needed %}
+          <a href="#" onclick="showRecoverPasswordForm();return false;">{{ 'customer.login.forgot_password' | t }}</a>
+        {% endif %}
+
         <p>
           <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
         </p>
-        <div class="link-wrapper">
+        {% comment %} <div class="link-wrapper">
           {% if form.password_needed %}
           <p>
             <a href="#" onclick="showRecoverPasswordForm();return false;">{{ 'customer.login.forgot_password' | t }}</a>
@@ -43,7 +58,7 @@
           <p>
             <a href="{{ shop.url }}">{{ 'customer.login.cancel' | t }}</a>
           </p>
-        </div>        
+        </div>         {% endcomment %}
         {% endform %}
       </div>
 
