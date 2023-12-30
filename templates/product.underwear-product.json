@@ -116,7 +116,7 @@
         "gallery_type": "thumbnails_horizontal",
         "vertical_style": "dt-sc-product-vertical-thumb-right",
         "enable_zoom": true,
-        "zoom_type": "outer",
+        "zoom_type": "inner",
         "enable_video_looping": false,
         "meta-lable-style": "one-half",
         "reviews": false,
