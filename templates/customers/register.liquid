@@ -1,6 +1,21 @@
 <div class="container">
   <div class="user-account">
-    <div class="grid__item small--text-center">
+    <div class="grid__item auth-container-left-side">
+      <h5>
+        WELCOME BACK!
+      </h5>
+      <p>
+        To keep connected with us please login with your personal info
+      </p>
+      {% comment %} <button>Sign Up</button> {% endcomment %}
+      <p class="dt-sc-btn p-button">
+        {{ 'customer.login.sign_in' | t | customer_login_link }}
+      </p>
+    </div>
+    <div class="grid__item small--text-center auth-container-right-side">
+      <h5 class="login-title">
+        {{ 'customer.register.title' | t }}
+      </h5>
       <div class="register-form">
         {% comment %}
         This form must use 'create_customer'
@@ -23,7 +38,7 @@
 
         <div class="dt-sc-btn-group">
           <input  type="submit" value="{{ 'customer.register.submit' | t }}" class="dt-sc-btn">
-          <a class="dt-sc-btn" href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>
+          {% comment %} <a class="dt-sc-btn" href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a> {% endcomment %}
         </div>
         {% endform %}
         
