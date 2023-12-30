@@ -132,7 +132,7 @@
         "show_share_buttons": true,
         "tab_position": "bottom",
         "tab_style": "tab",
-        "product_tab1": false,
+        "product_tab1": true,
         "product_tab1_heading": "Description",
         "product_tab2": false,
         "product_tab2_heading": "Shipping Information",
