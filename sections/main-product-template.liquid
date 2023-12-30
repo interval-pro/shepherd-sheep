@@ -344,6 +344,9 @@
   .quickview-description .product-price, 
   .product-item-caption .product-price{ display: block; margin: 0;}
 
+  .product-description-product-template .product-price .product-price-current {
+    color: {{ settings.price_text_color }};
+  }
 
   .product-description-product-template .product-price .price-list { display: flex; flex-wrap: wrap; align-items: center; margin:0; }
 
@@ -368,9 +371,6 @@
   .quickview-description .product-price, 
   .product-item-caption .product-price{ display: flex; flex-wrap: wrap; align-items: center; margin:0; }
 
-  .product-price .product-price-label {
-    color: {{ settings.product_price_label_color }};
-  }
   .product-item-caption-white .product-template-content .product-label, 
   .product-item-caption-white .product-label, 
   .product-item-caption-white .product-template-content label { min-width: 140px; }
