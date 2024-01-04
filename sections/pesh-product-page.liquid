@@ -30,15 +30,32 @@
       class="collection-content"
       style="display: none;">
       {% for product in collections['boxer-briefs'].products %}
+        
+        {% assign size_list = '' %} 
+        {% for variant in product.variants %}
+          {% unless size_list contains variant.option1 %}
+            {% assign size_list = size_list | append: variant.option1 | append: ',' %}
+          {% endunless %}
+        {% endfor %}
+        {% assign unique_sizes = size_list | split: ',' %}
+
+        {% comment %} {% assign color_list = '' %} 
+        {% for variant in product.variants %}
+          {% unless size_list contains variant.option2 %}
+            {% assign color_list = color_list | append: variant.option2 | append: ',' %}
+          {% endunless %}
+        {% endfor %}
+        {% assign unique_colors = color_list | split: ',' %} {% endcomment %}
+
         <div class="product">
           <div class="product-image">
             <a href="{{ product.url | within: collection }}">
               <img src="{{ product.featured_image | img_url: '300x' }}" alt="{{ product.featured_image.alt | escape }}">
               <div class="sizes-container">
-                {% for variant in product.variants %}
-                    <div class="size">
-                      {{ variant.title }}
-                    </div>
+                {% for size in unique_sizes %}
+                  <div class="size">
+                    {{ size }}
+                  </div>
                   {% endfor %}
               </div>
             </a>
@@ -50,6 +67,13 @@
             <div class="product-price">
               {{ product.price | money_with_currency }}
             </div>
+            {% comment %} <div class="colors">
+              {% for colorr in unique_colors %}
+                <div class="color">
+                  {{ colorr }}
+                </div>
+              {% endfor %}
+            </div> {% endcomment %}
           </div>
         </div>
       {% endfor %}
