@@ -1,288 +1,291 @@
 {
-    "sections": {
-      "main": {
-        "type": "giftcard-product-template",
-        "blocks": {
-          "bd5fe641-75f6-4c13-999c-d0be32e3bc87": {
-            "type": "title",
-            "settings": {
-            }
-          },
-          "7c9c1efb-83bb-46b0-abe9-7c4951265cf4": {
-            "type": "price",
-            "settings": {
-            }
-          },
-          "f14720d8-dc3c-44a3-8bfa-cea5cf644d9d": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "text": "{{ product.metafields.descriptors.subtitle.value }}"
-            }
-          },
-          "db797c60-1d3c-4034-b55d-151ec5cae2d7": {
-            "type": "deal",
-            "settings": {
-            }
-          },
-          "19be33f4-40db-451a-b5c2-40daa748ac9a": {
-            "type": "fbt",
-            "settings": {
-            }
-          },
-          "cb874c94-c1ed-44c9-a5d6-a12bc6093239": {
-            "type": "vendor",
-            "disabled": true,
-            "settings": {
-            }
-          },
-          "22c4f5eb-0a61-4ed2-865c-ec6f809e783c": {
-            "type": "notify-form",
-            "settings": {
-            }
-          },
-          "c0548d06-402e-4234-9a58-03c52a7d6c74": {
-            "type": "type",
-            "disabled": true,
-            "settings": {
-            }
-          },
-          "f26a6ae3-78b7-4d9f-885e-fcbc49deba02": {
-            "type": "menu",
-            "settings": {
-              "title": "Custom Menu",
-              "linklist": ""
-            }
-          },
-          "2ff9f47d-7f11-4be0-b8ec-143624b3ca83": {
-            "type": "collection",
-            "settings": {
-              "title": "New Arrivals",
-              "collection": "underwear",
-              "limit": 3
-            }
-          },
-          "14952b1f-8a11-46fc-93bc-26529aab775e": {
-            "type": "carousel",
-            "settings": {
-              "title": "Best Sellers",
-              "collection": "underwear",
-              "limit": 5
-            }
-          },
-          "f9c96d80-5ab7-4354-839a-07c60d24aabc": {
-            "type": "badge",
-            "settings": {
-              "badge_label": "100% Secured Payment"
-            }
-          },
-          "cad3ad3e-6913-4865-a804-9c9d16146aca": {
-            "type": "social-sharing",
-            "settings": {
-            }
-          },
-          "cc198ead-a891-4147-b2e3-4d6222e238a0": {
-            "type": "size_chart",
-            "settings": {
-            }
+  "sections": {
+    "main": {
+      "type": "giftcard-product-template",
+      "blocks": {
+        "bd5fe641-75f6-4c13-999c-d0be32e3bc87": {
+          "type": "title",
+          "settings": {
           }
         },
-        "block_order": [
-          "bd5fe641-75f6-4c13-999c-d0be32e3bc87",
-          "7c9c1efb-83bb-46b0-abe9-7c4951265cf4",
-          "f14720d8-dc3c-44a3-8bfa-cea5cf644d9d",
-          "db797c60-1d3c-4034-b55d-151ec5cae2d7",
-          "19be33f4-40db-451a-b5c2-40daa748ac9a",
-          "cb874c94-c1ed-44c9-a5d6-a12bc6093239",
-          "22c4f5eb-0a61-4ed2-865c-ec6f809e783c",
-          "c0548d06-402e-4234-9a58-03c52a7d6c74",
-          "f26a6ae3-78b7-4d9f-885e-fcbc49deba02",
-          "2ff9f47d-7f11-4be0-b8ec-143624b3ca83",
-          "14952b1f-8a11-46fc-93bc-26529aab775e",
-          "f9c96d80-5ab7-4354-839a-07c60d24aabc",
-          "cad3ad3e-6913-4865-a804-9c9d16146aca",
-          "cc198ead-a891-4147-b2e3-4d6222e238a0"
-        ],
-        "settings": {
-          "default_text_color": "#f4f4f4",
-          "full": false,
-          "spacing_both_ends": true,
-          "padding": "0,0",
-          "margin": "0,0",
-          "gallery_type": "thumbnails_horizontal",
-          "vertical_style": "dt-sc-product-vertical-thumb-right",
-          "enable_zoom": true,
-          "zoom_type": "inner",
-          "enable_video_looping": false,
-          "meta-lable-style": "one-half",
-          "reviews": false,
-          "show_variants_swatches": true,
-          "swatch_as": "color",
-          "show_product_quantity": true,
-          "display_back_in_stock": true,
-          "show_quantity_selector": true,
-          "show_checkout": false,
-          "hide_addtocart": false,
-          "show_wishlist": false,
-          "show_share_buttons": false,
-          "tab_position": "right",
-          "tab_style": "tab",
-          "product_tab1": true,
-          "product_tab1_heading": "Description",
-          "product_tab2": false,
-          "product_tab2_heading": "Shipping Information",
-          "page_content": "shipping-information",
-          "product_tab3": false,
-          "product_tab3_heading": "Reviews",
-          "enable_enquiry": false,
-          "enable_sticky_cart": false,
-          "show_adv_product": false,
-          "choose_label": "Choose style",
-          "collection": "advanced-product-tagging"
+        "7c9c1efb-83bb-46b0-abe9-7c4951265cf4": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "f14720d8-dc3c-44a3-8bfa-cea5cf644d9d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}"
+          }
+        },
+        "db797c60-1d3c-4034-b55d-151ec5cae2d7": {
+          "type": "deal",
+          "settings": {
+          }
+        },
+        "19be33f4-40db-451a-b5c2-40daa748ac9a": {
+          "type": "fbt",
+          "settings": {
+          }
+        },
+        "cb874c94-c1ed-44c9-a5d6-a12bc6093239": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "22c4f5eb-0a61-4ed2-865c-ec6f809e783c": {
+          "type": "notify-form",
+          "settings": {
+          }
+        },
+        "c0548d06-402e-4234-9a58-03c52a7d6c74": {
+          "type": "type",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "f26a6ae3-78b7-4d9f-885e-fcbc49deba02": {
+          "type": "menu",
+          "settings": {
+            "title": "Custom Menu",
+            "linklist": ""
+          }
+        },
+        "2ff9f47d-7f11-4be0-b8ec-143624b3ca83": {
+          "type": "collection",
+          "settings": {
+            "title": "New Arrivals",
+            "collection": "underwear",
+            "limit": 3
+          }
+        },
+        "14952b1f-8a11-46fc-93bc-26529aab775e": {
+          "type": "carousel",
+          "settings": {
+            "title": "Best Sellers",
+            "collection": "underwear",
+            "limit": 5
+          }
+        },
+        "f9c96d80-5ab7-4354-839a-07c60d24aabc": {
+          "type": "badge",
+          "settings": {
+            "badge_label": "100% Secured Payment"
+          }
+        },
+        "cad3ad3e-6913-4865-a804-9c9d16146aca": {
+          "type": "social-sharing",
+          "settings": {
+          }
+        },
+        "cc198ead-a891-4147-b2e3-4d6222e238a0": {
+          "type": "size_chart",
+          "settings": {
+          }
         }
       },
-      "product-recommendations": {
-        "type": "product-recommendations",
-        "settings": {
-          "full": false,
-          "spacing_both_ends": false,
-          "padding": "",
-          "margin": "0,0",
-          "heading": "Recommended Products",
-          "heading_position": "text-center",
-          "heading_color": "#e13d1d",
-          "background_color": "#f4f4f4",
-          "product_title_color": "#304768"
-        }
-      },
-      "ce8b0388-9d57-432e-9466-440e82983274": {
-        "type": "home-slider-width-tabs",
-        "settings": {
-          "full": true,
-          "spacing_both_ends": false,
-          "padding": "300,300",
-          "margin": "0,0",
-          "show_background_image": true,
-          "background_image": "shopify:\/\/shop_images\/R6II5769.jpg",
-          "background_style": "none",
-          "background_size": "cover",
-          "enable_overlay": false,
-          "background_color": "",
-          "overlay_transparency": "0.5",
-          "section_heading": "CONFIDENCE EVERYWHERE",
-          "section_sub_heading": "",
-          "section_description": "",
-          "section_button_text": "",
-          "section_button_link": "",
-          "section_heading_color": "#ffffff",
-          "section_sub_heading_color": "",
-          "section_description_color": "",
-          "section_button_bg_color": "",
-          "section_button_text_color": "",
-          "section_button_hover_bg_color": "",
-          "section_button_hover_text_color": "",
-          "heading_position": "text-center",
-          "slider_overlay_color": "",
-          "slider_overlay_transparency": "0.25",
-          "slider_progress_title_color": "",
-          "slider_progress_bar_color": "",
-          "slider_progress_bar_bg_color": "",
-          "disable_arrows": false,
-          "custom_class_name": ""
-        }
-      },
-      "060e1439-d8ff-415c-bc5d-6ec2e92c1417": {
-        "type": "home-slider-width-tabs",
-        "settings": {
-          "full": true,
-          "spacing_both_ends": false,
-          "padding": "300,300",
-          "margin": "0,0",
-          "show_background_image": true,
-          "background_image": "shopify:\/\/shop_images\/Banner-slider.jpg",
-          "background_style": "none",
-          "background_size": "cover",
-          "enable_overlay": false,
-          "background_color": "",
-          "overlay_transparency": "0.5",
-          "section_heading": "PREMIUM MATERIALS",
-          "section_sub_heading": "",
-          "section_description": "",
-          "section_button_text": "",
-          "section_button_link": "",
-          "section_heading_color": "#ffffff",
-          "section_sub_heading_color": "",
-          "section_description_color": "",
-          "section_button_bg_color": "",
-          "section_button_text_color": "",
-          "section_button_hover_bg_color": "",
-          "section_button_hover_text_color": "",
-          "heading_position": "text-center",
-          "slider_overlay_color": "",
-          "slider_overlay_transparency": "0.25",
-          "slider_progress_title_color": "",
-          "slider_progress_bar_color": "",
-          "slider_progress_bar_bg_color": "",
-          "disable_arrows": true,
-          "custom_class_name": ""
-        }
-      },
-      "fda2177e-8f5b-4e43-aa55-2d075859b588": {
-        "type": "home-slider-width-tabs",
-        "settings": {
-          "full": false,
-          "spacing_both_ends": false,
-          "padding": "300,300",
-          "margin": "0,0",
-          "show_background_image": true,
-          "background_image": "shopify:\/\/shop_images\/Banner-slider-v5.jpg",
-          "background_style": "none",
-          "background_size": "cover",
-          "enable_overlay": false,
-          "background_color": "",
-          "overlay_transparency": "0.5",
-          "section_heading": "QUICK DRY",
-          "section_sub_heading": "",
-          "section_description": "",
-          "section_button_text": "",
-          "section_button_link": "",
-          "section_heading_color": "#ffffff",
-          "section_sub_heading_color": "",
-          "section_description_color": "",
-          "section_button_bg_color": "",
-          "section_button_text_color": "",
-          "section_button_hover_bg_color": "",
-          "section_button_hover_text_color": "",
-          "heading_position": "text-center",
-          "slider_overlay_color": "",
-          "slider_overlay_transparency": "0.25",
-          "slider_progress_title_color": "",
-          "slider_progress_bar_color": "",
-          "slider_progress_bar_bg_color": "",
-          "disable_arrows": true,
-          "custom_class_name": ""
-        }
-      },
-      "00805362-d8f7-4878-8b52-6c4fe5ae6f38": {
-        "type": "sizing-chart",
-        "settings": {
-          "sizing_chart_title": "Sizing Chart",
-          "bg_color": "#f4f4f4",
-          "title_color": "#304768",
-          "table_header_bg_color": "#e13d1d",
-          "table_font_color": "#ffffff",
-          "border_color": "#f4f4f4",
-          "cell_color": "#ec8562"
-        }
+      "block_order": [
+        "bd5fe641-75f6-4c13-999c-d0be32e3bc87",
+        "7c9c1efb-83bb-46b0-abe9-7c4951265cf4",
+        "f14720d8-dc3c-44a3-8bfa-cea5cf644d9d",
+        "db797c60-1d3c-4034-b55d-151ec5cae2d7",
+        "19be33f4-40db-451a-b5c2-40daa748ac9a",
+        "cb874c94-c1ed-44c9-a5d6-a12bc6093239",
+        "22c4f5eb-0a61-4ed2-865c-ec6f809e783c",
+        "c0548d06-402e-4234-9a58-03c52a7d6c74",
+        "f26a6ae3-78b7-4d9f-885e-fcbc49deba02",
+        "2ff9f47d-7f11-4be0-b8ec-143624b3ca83",
+        "14952b1f-8a11-46fc-93bc-26529aab775e",
+        "f9c96d80-5ab7-4354-839a-07c60d24aabc",
+        "cad3ad3e-6913-4865-a804-9c9d16146aca",
+        "cc198ead-a891-4147-b2e3-4d6222e238a0"
+      ],
+      "settings": {
+        "default_text_color": "#f4f4f4",
+        "full": false,
+        "spacing_both_ends": true,
+        "padding": "0,0",
+        "margin": "0,0",
+        "gallery_type": "thumbnails_horizontal",
+        "vertical_style": "dt-sc-product-vertical-thumb-right",
+        "enable_zoom": true,
+        "zoom_type": "inner",
+        "enable_video_looping": false,
+        "meta-lable-style": "one-half",
+        "reviews": false,
+        "show_variants_swatches": true,
+        "swatch_as": "color",
+        "show_product_quantity": true,
+        "display_back_in_stock": true,
+        "show_quantity_selector": true,
+        "show_checkout": false,
+        "hide_addtocart": false,
+        "show_wishlist": false,
+        "show_share_buttons": false,
+        "tab_position": "right",
+        "tab_style": "tab",
+        "product_tab1": true,
+        "product_tab1_heading": "Description",
+        "product_tab2": false,
+        "product_tab2_heading": "Shipping Information",
+        "page_content": "shipping-information",
+        "product_tab3": false,
+        "product_tab3_heading": "Reviews",
+        "enable_enquiry": false,
+        "enable_sticky_cart": false,
+        "show_adv_product": false,
+        "choose_label": "Choose style",
+        "collection": "advanced-product-tagging"
       }
     },
-    "order": [
-      "main",
-      "product-recommendations",
-      "ce8b0388-9d57-432e-9466-440e82983274",
-      "060e1439-d8ff-415c-bc5d-6ec2e92c1417",
-      "fda2177e-8f5b-4e43-aa55-2d075859b588",
-      "00805362-d8f7-4878-8b52-6c4fe5ae6f38"
-    ]
-  }
-  
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "",
+        "margin": "0,0",
+        "heading": "Recommended Products",
+        "heading_position": "text-center",
+        "heading_color": "#e13d1d",
+        "background_color": "#f4f4f4",
+        "product_title_color": "#304768"
+      }
+    },
+    "ce8b0388-9d57-432e-9466-440e82983274": {
+      "type": "home-slider-width-tabs",
+      "disabled": true,
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "padding": "300,300",
+        "margin": "0,0",
+        "show_background_image": true,
+        "background_image": "shopify:\/\/shop_images\/R6II5769.jpg",
+        "background_style": "none",
+        "background_size": "cover",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "CONFIDENCE EVERYWHERE",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "slider_overlay_color": "",
+        "slider_overlay_transparency": "0.25",
+        "slider_progress_title_color": "",
+        "slider_progress_bar_color": "",
+        "slider_progress_bar_bg_color": "",
+        "disable_arrows": false,
+        "custom_class_name": ""
+      }
+    },
+    "060e1439-d8ff-415c-bc5d-6ec2e92c1417": {
+      "type": "home-slider-width-tabs",
+      "disabled": true,
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "padding": "300,300",
+        "margin": "0,0",
+        "show_background_image": true,
+        "background_image": "shopify:\/\/shop_images\/Banner-slider.jpg",
+        "background_style": "none",
+        "background_size": "cover",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "PREMIUM MATERIALS",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "slider_overlay_color": "",
+        "slider_overlay_transparency": "0.25",
+        "slider_progress_title_color": "",
+        "slider_progress_bar_color": "",
+        "slider_progress_bar_bg_color": "",
+        "disable_arrows": true,
+        "custom_class_name": ""
+      }
+    },
+    "fda2177e-8f5b-4e43-aa55-2d075859b588": {
+      "type": "home-slider-width-tabs",
+      "disabled": true,
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "300,300",
+        "margin": "0,0",
+        "show_background_image": true,
+        "background_image": "shopify:\/\/shop_images\/Banner-slider-v5.jpg",
+        "background_style": "none",
+        "background_size": "cover",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "QUICK DRY",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "slider_overlay_color": "",
+        "slider_overlay_transparency": "0.25",
+        "slider_progress_title_color": "",
+        "slider_progress_bar_color": "",
+        "slider_progress_bar_bg_color": "",
+        "disable_arrows": true,
+        "custom_class_name": ""
+      }
+    },
+    "00805362-d8f7-4878-8b52-6c4fe5ae6f38": {
+      "type": "sizing-chart",
+      "disabled": true,
+      "settings": {
+        "sizing_chart_title": "Sizing Chart",
+        "bg_color": "#f4f4f4",
+        "title_color": "#304768",
+        "table_header_bg_color": "#e13d1d",
+        "table_font_color": "#ffffff",
+        "border_color": "#f4f4f4",
+        "cell_color": "#ec8562"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "ce8b0388-9d57-432e-9466-440e82983274",
+    "060e1439-d8ff-415c-bc5d-6ec2e92c1417",
+    "fda2177e-8f5b-4e43-aa55-2d075859b588",
+    "00805362-d8f7-4878-8b52-6c4fe5ae6f38"
+  ]
+}
