@@ -124,7 +124,7 @@
         "show_checkout": false,
         "hide_addtocart": false,
         "show_wishlist": false,
-        "show_share_buttons": false,
+        "show_share_buttons": true,
         "tab_position": "right",
         "tab_style": "tab",
         "product_tab1": true,
