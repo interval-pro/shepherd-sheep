@@ -117,7 +117,7 @@
         "meta-lable-style": "one-half",
         "reviews": false,
         "show_variants_swatches": true,
-        "swatch_as": "image",
+        "swatch_as": "color",
         "show_product_quantity": true,
         "display_back_in_stock": true,
         "show_quantity_selector": true,
