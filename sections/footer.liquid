@@ -193,9 +193,9 @@
   .site-footer:before{ content:''; position: absolute; left: 0; right: 0; top: 0; bottom: 0;  background-color:{{ section.settings.footer_bg_clr }}; opacity:{{ section.settings.color_opacity }}; }
   .site-footer, .site-footer p { color:{{ section.settings.footer_txt_clr }}; }
   .site-footer li a { color:{{ section.settings.footer_link_clr }}; font-size: calc(var(--DTFontSizeBase) + 4px);}
-  .site-footer .footer-social-icons li a { font-size: calc(var(--DTFontSizeBase) + 4px); padding: 0 10px; }
+  .site-footer .footer-social-icons li a { font-size: calc(var(--DTFontSizeBase) + 4px); padding: 0 2px; }
   .site-footer li a:hover { color:{{ section.settings.footer_link_hover_clr }}; }
-
+  .site-footer .footer-social-icons { transform: scale(2.5)}
   /**************/
   .site-footer{ position:relative; max-width: 75%; margin: auto; }
   .site-footer > *{ z-index: 1; position: relative;}
