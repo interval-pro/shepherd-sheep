@@ -1,7 +1,49 @@
 <div class="pop-up-modal">
   <div class="pop-up-content">
     <span class="close-button dt-sc-btn close-icon"></span>
-    <span class="size-chart-content">{{ pages.size-chart.content }}</span>
+    <span class="size-chart-content">
+      <div class="sizing-chart-section sizing-chart-popup-version">
+        <div class="sizing-chart-table">
+          <table>
+            <thead>
+              <tr>
+                <th>SIZE</th>
+                <th>WAIST (cm)</th>
+                <th>WAIS (in)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Small</td>
+                <td>71-76</td>
+                <td>28-30</td>
+              </tr>
+              <tr>
+                <td>Medium</td>
+                <td>81-86</td>
+                <td>32-34</td>
+              </tr>
+              <tr>
+                <td>Large</td>
+                <td>90-95</td>
+                <td>36-38</td>
+              </tr>
+              <tr>
+                <td>Extra Large</td>
+                <td>100-105</td>
+                <td>40-42</td>
+              </tr>
+              <tr>
+                <td>2 XL</td>
+                <td>109-114</td>
+                <td>43-45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </span>
   </div>
 </div>
 
@@ -31,7 +73,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     opacity: 0;
     display: none;
     transform: scale(1.1);
@@ -42,10 +84,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding:30px;
+    background-color: var(--color-5);
+    padding: 30px;
     width: auto;
     border-radius: var(--DTRadius);
+    max-width: 100%;
   }
   .pop-up-content table {
     table-layout: auto;
@@ -73,6 +116,9 @@
     margin-right:5px;
   }
   
+  .sizing-chart-popup-version {
+    padding: 0 !important;
+  }
   @media only screen and (max-width: 749px) {
     .pop-up-content, .size-chart-content table { width: 100% ; }
     .size-chart-content th, .size-chart-content td { padding: 10px;}
