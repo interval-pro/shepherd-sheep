@@ -1,0 +1,220 @@
+<div class="account-container-wrapper">
+    <div class="account-container">
+        <h5 class="title">
+            MY ACCOUNT
+        </h5>
+        <div class="account-menu">
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}"  />
+                <span>Personal details</span>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-orders.svg' | asset_url  }}" />
+                <span>Orders</span>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <span>Tracking Orders</span>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <span>Returns</span>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url }}" />
+                <span>Log Out</span>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class='inside-content' id="personal-info-content">
+                <div class="personal-details">
+                    <div class="custom-input">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="first-name" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="surname">Last Name</label>
+                        <input type="text" id="surname" name="surname" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address1">Address 1</label>
+                        <input type="text" id="address1" name="address1" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address1">Address 2</label>
+                        <input type="text" id="address2" name="address2" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address3">House/ Apartment №</label>
+                        <input type="text" id="address3" name="address3" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="province">Province</label>
+                        <input type="text" id="province" name="province" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="postcode">Postal / Zip Code</label>
+                        <input type="number" id="postcode" name="postcode" />
+                    </div>
+                </div>
+                <div class="change-password">
+                    <p>Change Your Password</p>
+                    <div class="custom-input">
+                        <label for="current-pass">Current Password</label>
+                        <input type="password" id="current-pass" name="current-pass" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="new-pass">New Password</label>
+                        <input type="password" id="new-pass" name="new-pass" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="conf-pass">Confirm Your Password</label>
+                        <input type="password" id="sconf-pass" name="conf-pass" />
+                    </div>
+                </div>
+                <button> Save </button>
+            </div>
+            <div class='inside-content' id="orders-content">
+                b
+            </div>
+            <div class='inside-content' id="tracking-content">
+                c
+            </div>
+            <div class='inside-content' id="returns-content">
+                d
+            </div>
+            <div class='inside-content' id="logout-content">
+                e
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .account-container-wrapper {
+        width: 100%;
+        background-color: var(--color-5);
+    }
+    .account-container-wrapper .account-container {
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .account-container h5.title {
+        color: var(--color-1);
+        font-weight: bold;
+    }
+    .account-container .account-menu {
+        display: flex;
+    }
+    .account-container .account-menu .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10rem;
+        cursor: pointer;
+    }
+    .account-container .account-menu .menu-item img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .account-container .account-menu .menu-item span {
+        color: var(--color-4);
+    }
+    .account-container .content-wrapper {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease; 
+
+    }
+
+    .account-container .content-wrapper .inside-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .account-container .content-wrapper .custom-input {
+        width: calc(50% - 2rem);
+        margin-bottom: 1rem;
+    }
+    .account-container .content-wrapper .custom-input label {
+        color: var(--color-2);
+        font-weight: 300;
+        font-size: 0.75rem;
+    }
+    .account-container .content-wrapper .custom-input input {
+        background-color: unset;
+        border: none;
+        border-bottom: 2px solid var(--color-1);
+        color: var(--color-4);
+        height: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    #personal-info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0 6rem 0;
+    }
+
+    #personal-info-content .personal-details {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        row-gap: 0;
+    }
+
+    #personal-info-content .change-password {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        row-gap: 0;
+    }
+    #personal-info-content .change-password p {
+        color: var(--color-4);
+        font-weight: bold;
+        padding-left: 2rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    #personal-info-content button {
+        width: 15rem;
+        margin: 0 auto;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
+        const contentWrapper = document.querySelector('.content-wrapper');
+        const slideContent = (index) => contentWrapper.style.transform = `translateX(${index * -100}%)`;
+        menuItems.forEach((item, index) => item.addEventListener('click', () => slideContent(index)));
+    });
+</script>
