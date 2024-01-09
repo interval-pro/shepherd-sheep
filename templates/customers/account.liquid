@@ -1,84 +1,323 @@
-<div class="container">
-  <div class="order-form">
-    <div class="grid__item">
-      <h4>{{ 'customer.orders.title' | t }}</h4>
-      <p style=" display: inline-block"><a class="dt-sc-btn " href="{{ routes.account_logout_url }}"> {{ 'layout.customer.log_out' | t }} </a></p>
-      {% paginate customer.orders by 20 %}
-      {% if customer.orders.size != 0 %}
-      <div class="table-wrap">
-        <table class="full">
-          <thead>
-            <tr>
-              <th>{{ 'customer.orders.order_number' | t }}</th>
-              <th>{{ 'customer.orders.date' | t }}</th>
-              <th>{{ 'customer.orders.payment_status' | t }}</th>
-              <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
-              <th>{{ 'customer.orders.total' | t }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for order in customer.orders %}
-            <tr>
-              <td>{{ order.name | link_to: order.customer_url }}</td>
-              <td>{{ order.created_at | date: "%b %d, %Y" }}</td>
-              <td>{{ order.financial_status_label }}</td>
-              <td>{{ order.fulfillment_status_label }}</td>
-              <td>{{ order.total_price | money }}</td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+<div class="account-container-wrapper">
+    <div class="account-container">
+        <h5 class="title">
+            MY ACCOUNT
+        </h5>
+        <div class="account-menu">
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}"  />
+                <p>Personal details</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-orders.svg' | asset_url  }}" />
+                <p>Orders</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <p>Tracking Orders</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <p>Returns</p>
+            </div>
+            <div class="menu-item">
+                <img src="{{ 'account-details.svg' | asset_url }}" />
+                <p>Log Out</p>
+            </div>
+        </div>
 
-      {% else %}
-      <p>{{ 'customer.orders.none' | t }}</p>
-      {% endif %}
-      {% if paginate.pages > 1 %}
-      <div class="text-center">
-        {% include 'pagination-custom' %}
-      </div>
-      {% endif %}
-      {% endpaginate %}
+        <div class="content-wrapper">
+            <div class='inside-content' id="personal-info-content">
+                <div class="personal-details">
+                    <div class="custom-input">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="first-name" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="surname">Last Name</label>
+                        <input type="text" id="surname" name="surname" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address1">Address 1</label>
+                        <input type="text" id="address1" name="address1" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address1">Address 2</label>
+                        <input type="text" id="address2" name="address2" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="address3">House/ Apartment №</label>
+                        <input type="text" id="address3" name="address3" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="province">Province</label>
+                        <input type="text" id="province" name="province" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="postcode">Postal / Zip Code</label>
+                        <input type="number" id="postcode" name="postcode" />
+                    </div>
+                </div>
+                <div class="change-password">
+                    <p>Change Your Password</p>
+                    <div class="custom-input">
+                        <label for="current-pass">Current Password</label>
+                        <input type="password" id="current-pass" name="current-pass" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="new-pass">New Password</label>
+                        <input type="password" id="new-pass" name="new-pass" />
+                    </div>
+                    <div class="custom-input">
+                        <label for="conf-pass">Confirm Your Password</label>
+                        <input type="password" id="sconf-pass" name="conf-pass" />
+                    </div>
+                </div>
+                <button> Save </button>
+            </div>
+            <div class='inside-content' id="orders-content">
+                <div class="orders-list">
+                    {% for order in customer.orders %}
+                        <div class="order-wrapper">
+                            <div class="status">
+                                <p> Order Status: {{ order.financial_status_label }} / {{ order.fulfillment_status  }}</p>
+                            </div>
+                            <div class="info">
+                                <div class="order-pieces-info">
+                                    <div class="items-count">
+                                        <p>Items: {{ order.item_count }}</p>
+                                    </div>
+                                    {% for orderItem in order.line_items %}
+                                        <img src="{{ orderItem.product.featured_image | image_url: width: 100 }}">
+                                    {% endfor %}
+                                </div>
+                                <div class="order-meta-info">
+                                    <span> {{ order.created_at | date: "%d.%m.%Y" }}</span>
+                                    <span> {{ order.total_price | money_with_currency }}</span>
+                                    <a class="see-details" href="{{ order.order_status_url }}">See details</a>
+                                </div>
+                            </div>
+                        </div>
+                      {% endfor %}
+                </div>
+            </div>
+            <div class='inside-content' id="tracking-content">
+                c
+            </div>
+            <div class='inside-content' id="returns-content">
+                d
+            </div>
+            <div class='inside-content' id="logout-content">
+                e
+            </div>
+        </div>
     </div>
-
-    <div class="grid__item">
-      <div class="address-col">
-        <h4>{{ 'customer.account.details' | t }}</h4>
-        <p>{{ customer.name }}</p>
-        {% if customer.default_address != nil %}
-        <p>
-          {{ customer.default_address.address1 }}<br>
-
-          {% if customer.default_address.address2 != "" %}
-          {{ customer.default_address.address2 }}<br>
-          {% endif %}
-
-          {% if customer.default_address.city != "" %}
-          {{ customer.default_address.city }}<br>
-          {% endif %}
-
-          {% if customer.default_address.province_code != "" %}
-          {{ customer.default_address.province_code | upcase }}<br>
-          {% endif %}
-
-          {% if customer.default_address.zip != "" %}
-          {{ customer.default_address.zip | upcase }}<br>
-          {% endif %}
-
-          {% if customer.default_address.country != "" %}
-          {{ customer.default_address.country }}<br>
-          {% endif %}
-
-          {% if customer.default_address.phone != "" %}
-          {{ customer.default_address.phone }}
-          {% endif %}
-        </p>
-
-        {% endif %}
-
-        <p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
-      </div>  
-    </div>
-
-  </div>
 </div>
+<style>
+    .account-container-wrapper {
+        width: 100%;
+        background-color: var(--color-5);
+    }
+    .account-container-wrapper .account-container {
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .account-container h5.title {
+        color: var(--color-1);
+        font-weight: bold;
+    }
+    .account-container .account-menu {
+        display: flex;
+    }
+    .account-container .account-menu .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 10rem;
+        cursor: pointer;
+    }
+    .account-container .account-menu .menu-item img {
+        width: 5rem;
+        height: 5rem;
+    }
+    .account-container .account-menu .menu-item p {
+        color: var(--color-4);
+    }
+    .account-container .content-wrapper {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease; 
+
+    }
+
+    .account-container .content-wrapper .inside-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .account-container .content-wrapper .custom-input {
+        width: calc(50% - 2rem);
+        margin-bottom: 1rem;
+    }
+    .account-container .content-wrapper .custom-input label {
+        color: var(--color-2);
+        font-weight: 300;
+        font-size: 0.75rem;
+    }
+    .account-container .content-wrapper .custom-input input {
+        background-color: unset;
+        border: none;
+        border-bottom: 2px solid var(--color-1);
+        color: var(--color-4);
+        height: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    #personal-info-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0 6rem 0;
+    }
+
+    #personal-info-content .personal-details {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        row-gap: 0;
+    }
+
+    #personal-info-content .change-password {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        row-gap: 0;
+    }
+    #personal-info-content .change-password p {
+        color: var(--color-4);
+        font-weight: bold;
+        padding-left: 2rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    #personal-info-content button {
+        width: 15rem;
+        margin: 0 auto;
+    }
+
+    #orders-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0 6rem 0;
+    }
+    #orders-content .orders-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #orders-content .orders-list .order-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border-bottom: 2px solid var(--color-1);
+    }
+    #orders-content .orders-list .order-wrapper:first-child {
+        border-top: 2px solid var(--color-1);
+    }
+
+    #orders-content .orders-list .order-wrapper .status {
+        font-weight: bold;
+        color: var(--color-4);
+    }
+
+    #orders-content .orders-list .order-wrapper .info {
+        display: flex;
+    }
+
+    #orders-content .orders-list .order-wrapper .info .order-pieces-info {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1rem;
+        padding-top: 2rem;
+        flex-grow: 1;
+    }
+
+    #orders-content .orders-list .order-wrapper .info .order-pieces-info .items-count {
+        position: absolute;
+        top: 0;
+        font-size: 0.65rem;
+        font-weight: 100;
+        color: var(--color-4);
+    }
+
+    #orders-content .orders-list .order-wrapper .info .order-pieces-info img {
+        border-radius: 50%;
+        margin-right: 1rem;
+        width: 6rem;
+        height: 6rem;
+        box-shadow: 0rem 0rem 0.25rem 0.01rem gray;
+    }
+
+    #orders-content .orders-list .order-wrapper .info .order-meta-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        color: var(--color-4);
+        position: relative;
+    }
+
+    #orders-content .orders-list .order-wrapper .info .order-meta-info a {
+        position: absolute;
+        bottom: 0;
+        color: var(--color-4);
+        &:hover {
+            color: var(--color-1);
+        }
+    }
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
+        const contentWrapper = document.querySelector('.content-wrapper');
+        const slideContent = (index) => contentWrapper.style.transform = `translateX(${index * -100}%)`;
+        menuItems.forEach((item, index) => item.addEventListener('click', () => {
+            if (index === 4) {
+                window.location.href = '/account/logout';
+                return;
+            }
+            slideContent(index);
+        }));
+    });
+</script>
