@@ -122,7 +122,11 @@
                 </div>
             </div>
             <div class='inside-content' id="tracking-content">
-                c
+                <div class="input-wrapper">
+                    <h5>TRACK YOUR ORDER</h5>
+                    <input type="text" placeholder="Tracking Number">
+                    <button>TRACK</button>
+                </div>
             </div>
             <div class='inside-content' id="returns-content">
                 d
@@ -306,6 +310,27 @@
         }
     }
 
+    #tracking-content {
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem 0 6rem 0;
+            h5 {
+                font-weight: bold;
+                color: var(--color-4);
+            }
+            input {
+                background-color: unset;
+                border: 2px solid var(--color-1);
+                border-radius: 2rem;
+                color: var(--color-4);
+                height: 3rem;
+                padding: 0 1rem;
+            }
+        }
+    }
 </style>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
