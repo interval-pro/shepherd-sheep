@@ -309,15 +309,38 @@
 </style>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        const sections = {
+            'personal-details': 0,
+            'orders': 1,
+            'tracking-orders': 2,
+            'returns': 3,
+        };
+        const sectionKeys = Object.keys(sections);
         const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
         const contentWrapper = document.querySelector('.content-wrapper');
-        const slideContent = (index) => contentWrapper.style.transform = `translateX(${index * -100}%)`;
+        const slideContent = (index) => {
+            contentWrapper.style.transform = `translateX(${index * -100}%)`;
+            updateUrl(sectionKeys[index]);
+        }
         menuItems.forEach((item, index) => item.addEventListener('click', () => {
-            if (index === 4) {
-                window.location.href = '/account/logout';
-                return;
-            }
+            if (index === 4) return window.location.href = '/account/logout';
             slideContent(index);
         }));
+
+        const getUrlParam = (name) => {
+            const results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results == null) return null;
+            return decodeURI(results[1]) || 0;
+        };
+
+        const updateUrl = (section) => {
+            if (history.pushState) {
+                const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?section=' + section;
+                window.history.pushState({path:newurl},'',newurl);
+            }
+        };
+
+        const section = getUrlParam('section');
+        if (section && sections.hasOwnProperty(section)) slideContent(sections[section]);
     });
 </script>

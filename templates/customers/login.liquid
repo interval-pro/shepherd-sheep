@@ -1,4 +1,9 @@
-<div class="container">
+{% if customer %}
+  <script type="text/javascript">
+    window.location.href = "{{ shop.url }}/account";
+  </script>
+  {% else %}
+  <div class="container">
   <div class="user-account">
     <div class="grid__item auth-container-left-side">
       <h5>
@@ -107,16 +112,17 @@
     </div>
   </div>
 
-  {% if shop.checkout.guest_login %}
+  {% comment %} {% if shop.checkout.guest_login %}
   <div class="user-account dt-sc-flex-space-between">
     <h4 class="title">{{ 'customer.login.guest_title' | t }}</h4>
     {% form 'guest_login' %}
     <input type="submit" class="btn" value="{{ 'customer.login.guest_continue' | t }}">
     {% endform %}
   </div>
-  {% endif %}
+  {% endif %} {% endcomment %}
 
 </div>
+{% endif %}
 
 <script>  
   function showRecoverPasswordForm() {
@@ -134,6 +140,6 @@
 
   // reset_success is only true when the reset form is
   {% if reset_success %}
-  document.getElementById('ResetSuccess').style.display = 'block';
+    document.getElementById('ResetSuccess').style.display = 'block';
   {% endif %}
 </script>

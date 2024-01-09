@@ -1,4 +1,9 @@
-<div class="container">
+{% if customer %}
+  <script type="text/javascript">
+    window.location.href = "{{ shop.url }}/account";
+  </script>
+  {% else %}
+  <div class="container">
   <div class="user-account">
     <div class="grid__item auth-container-left-side">
       <h5>
@@ -46,3 +51,4 @@
     </div>
   </div>
 </div>
+{% endif %}
