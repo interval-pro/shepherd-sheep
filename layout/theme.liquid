@@ -83,7 +83,15 @@
     <!-- End Recently Viewed Products -->
   </body>
 </html>
-
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.pathname === '/pages/tracking-orders') {
+      {% if customer %}
+        window.location.href = '/account?section=tracking-orders';
+      {% endif %}
+    }
+  });
+</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 * {
