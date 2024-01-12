@@ -84,10 +84,16 @@
         "section_description": "",
         "show_social": false
       }
+    },
+    "tracking_orders_fDpExj": {
+      "type": "tracking-orders",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "slideshow_bgT6PV"
+    "slideshow_bgT6PV",
+    "tracking_orders_fDpExj"
   ]
 }
