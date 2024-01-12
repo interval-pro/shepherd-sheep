@@ -19,6 +19,15 @@
     <!-- content for header -->
     {{ content_for_header }}       
     <!-- content for header -->
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.pathname === '/pages/tracking-orders') {
+          {% if customer %}
+            window.location.href = '/account?section=tracking-orders';
+          {% endif %}
+        }
+      });
+    </script>
   </head>
   
   <body id="{{ page_title | handle }}" class="{% if settings.enable_rtl %}rtl-enabled{% endif %} {% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% unless tempate contains 'index' %} others {% endunless %}">
@@ -83,15 +92,6 @@
     <!-- End Recently Viewed Products -->
   </body>
 </html>
-<script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.pathname === '/pages/tracking-orders') {
-      {% if customer %}
-        window.location.href = '/account?section=tracking-orders';
-      {% endif %}
-    }
-  });
-</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 * {
