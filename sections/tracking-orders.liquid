@@ -1,10 +1,17 @@
-<div class="input-wrapper">
+<div class="tracking-order-section-wrapper">
+    <div class="input-wrapper">
     <h5>TRACK YOUR ORDER</h5>
     <input type="text" placeholder="Tracking Number">
     <button>TRACK</button>
 </div>
+</div>
 <style>
+    .tracking-order-section-wrapper {
+        background-color: var(--color-5);
+    }
     .input-wrapper {
+        margin: 0 auto;
+        max-width: 50rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,7 +23,7 @@
         }
         input {
             background-color: unset;
-            border: 2px solid var(--color-1);
+            border: 2px solid var(--color-1) !important;
             border-radius: 2rem;
             color: var(--color-4);
             height: 3rem;
