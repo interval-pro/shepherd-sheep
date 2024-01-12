@@ -52,6 +52,7 @@
         "29bfbc1b-3c14-4598-bc93-0a77e4e0a6d3",
         "092d8a62-d51f-4ede-8c05-af1b468c517c"
       ],
+      "disabled": true,
       "settings": {
         "full": false,
         "spacing_both_ends": false,
