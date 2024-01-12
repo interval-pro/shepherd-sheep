@@ -9,19 +9,19 @@
                 <p>Personal details</p>
             </div>
             <div class="menu-item">
-                <img src="{{ 'account-orders.svg' | asset_url  }}" />
+                <img src="{{ 'account-orders.svg' | asset_url  }}"/>
                 <p>Orders</p>
             </div>
             <div class="menu-item">
-                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <img src="{{ 'account-tracking-orders.svg' | asset_url  }}" />
                 <p>Tracking Orders</p>
             </div>
             <div class="menu-item">
-                <img src="{{ 'account-details.svg' | asset_url  }}" />
+                <img src="{{ 'account-returns.svg' | asset_url  }}" />
                 <p>Returns</p>
             </div>
             <div class="menu-item">
-                <img src="{{ 'account-details.svg' | asset_url }}" />
+                <img src="{{ 'account-logout.svg' | asset_url }}" />
                 <p>Log Out</p>
             </div>
         </div>
@@ -114,7 +114,7 @@
                                 <div class="order-meta-info">
                                     <span> {{ order.created_at | date: "%d.%m.%Y" }}</span>
                                     <span> {{ order.total_price | money_with_currency }}</span>
-                                    <a class="see-details" href="{{ order.order_status_url }}">See details</a>
+                                    <a class="see-details" target="_blank" href="{{ order.order_status_url }}">See details</a>
                                 </div>
                             </div>
                         </div>
@@ -129,10 +129,10 @@
                 </div>
             </div>
             <div class='inside-content' id="returns-content">
-                d
+                
             </div>
             <div class='inside-content' id="logout-content">
-                e
+                      Logging Out ... 
             </div>
         </div>
     </div>
@@ -167,10 +167,18 @@
         width: 10rem;
         cursor: pointer;
     }
+
     .account-container .account-menu .menu-item img {
         width: 5rem;
         height: 5rem;
+        border-radius: 100%;
+        background-color: #D9D9D9;
     }
+
+    .account-container .account-menu .active-menu-item img {
+        background-color: var(--color-3);
+    } 
+
     .account-container .account-menu .menu-item p {
         color: var(--color-4);
     }
@@ -339,12 +347,18 @@
             'orders': 1,
             'tracking-orders': 2,
             'returns': 3,
+            'logout': 4,
         };
         const sectionKeys = Object.keys(sections);
         const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
         const contentWrapper = document.querySelector('.content-wrapper');
         const slideContent = (index) => {
             contentWrapper.style.transform = `translateX(${index * -100}%)`;
+            menuItems.forEach((item, i) => {
+                i === index
+                    ? item.classList.add('active-menu-item')
+                    : item.classList.remove('active-menu-item');
+            });
             updateUrl(sectionKeys[index]);
         }
         menuItems.forEach((item, index) => item.addEventListener('click', () => {
