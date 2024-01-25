@@ -322,13 +322,13 @@
           "@media screen and (min-width: 800px) {#toggle {display: none; }}"
         ],
         "settings": {
-          "full": false,
-          "spacing_both_ends": false,
+          "full": true,
+          "spacing_both_ends": true,
           "use_sticky_header": false,
           "use_sticky_mobile": false,
           "transparent_header": true,
           "show_announcement": true,
-          "hide_announcement_mobile": false,
+          "hide_announcement_mobile": true,
           "home_page_only": false,
           "bg_color": "#e13d1d",
           "text_color": "#ffffff",
