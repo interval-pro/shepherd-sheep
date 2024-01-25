@@ -361,7 +361,6 @@
 
                          // Desktop Menu
                          if($(window).width() >= {{ section.settings.mobile_screen_width | plus: 1  }}) {
-console.log("A");
     jQuery('.menu-item-has-children > a').mouseenter(function(e) {
       var selected = $(this);
       if (selected.next('div.sub-menu-block').hasClass('is-hidden')) {
@@ -1224,6 +1223,7 @@ header .dt-sc-header-logo-sec, .sticky-header-active {
 
     #AccessibleNav > *{ margin-top:20px; margin-bottom: 20px; }
 
+    .logo-alignment.dt-sc-logo_left #AccessibleNav .site-header__links { padding-right: 1rem; }
 
   @media (min-width:1540px) {
     .site-header__links.dt-sc-flex { margin-right: 0px; }
@@ -1241,7 +1241,7 @@ header .dt-sc-header-logo-sec, .sticky-header-active {
     {% else %}
     .mobile-nav-container, .dt-desktop-menu ul.dt-sc-list-inline .go-back, .dt-desktop-menu ul.dt-sc-list-inline .see-all { display: none; }
     {% endif %}
-    .logo-alignment.dt-sc-logo_left #AccessibleNav .site-header__links { margin-left: auto; padding-left: 5px; }
+    .logo-alignment.dt-sc-logo_left #AccessibleNav .site-header__links { margin-left: auto; padding-left: 5px; padding-right: 1rem; }
 
   }
 
@@ -1291,7 +1291,7 @@ header .dt-sc-header-logo-sec, .sticky-header-active {
 
     .logo-alignment.dt-sc-logo_left:not(.secondary-menu-enabled) .mobile-nav-container .menu-trigger > i, 
     .logo-alignment.dt-sc-logo_left:not(.secondary-menu-enabled) .mobile-nav-container .menu-trigger > span { color: {{ section.settings.icon_color }}; }
-    .logo-alignment.dt-sc-logo_left:not(.secondary-menu-enabled) .mobile-nav-container .menu-trigger { background-color: {{ section.settings.icon_bg }}; padding: 0 0 0 30px;  }        
+    .logo-alignment.dt-sc-logo_left:not(.secondary-menu-enabled) .mobile-nav-container .menu-trigger { background-color: {{ section.settings.icon_bg }}; padding: 0 0 0 1rem;  }        
 
     ul.dt-nav li  a span{ position: relative; }
     ul.dt-nav > li.has-mega-menu > div.sub-menu-block{ width: var(--DTContainer); }
@@ -1327,7 +1327,7 @@ header .dt-sc-header-logo-sec, .sticky-header-active {
     header .logo-alignment:not(.secondary-menu-enabled) #AccessibleNav { justify-content: space-between; }
 
     header #AccessibleNav { flex-wrap: nowrap; }
-    header #AccessibleNav .logo { /*margin-right: auto;*/ max-width: 65%; }
+    header #AccessibleNav .logo { /*margin-right: auto;*/ max-width: 65%; padding: 0 1rem; }
     header #AccessibleNav > .site-header__links { width: 100%; justify-content: flex-end; }
 
     .logo-alignment .mobile-nav-container .menu-trigger { padding: 0 10px !important; }
