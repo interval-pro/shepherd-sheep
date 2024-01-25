@@ -112,9 +112,9 @@
     <span class="icon__fallback-text">{{ 'cart.general.title' | t }}</span> <div id="CartCount" data-cart_item_count="{{ cart.item_count }}" data-show_cnt_zero="yes" class="site-header__cart-count{% if cart.item_count == 0 %} xhide{% endif %}" > <span class="count CartCount">{{ cart.item_count }}</span> <span class="cart-words">{{ 'cart.general.items_count' | t: count: cart.item_count }}</span> </div>
   </a>
   {% endif %}
-  {%- unless section.settings.show_secondary_menu or  section.settings.menu_align == 'menu_bottom'  -%}
+  {% comment %} {%- unless section.settings.show_secondary_menu or  section.settings.menu_align == 'menu_bottom'  -%}
   <div  class="mobile-nav-container mobile-nav-offcanvas-right dt-header-menu" data-menu="dt-main-menu"><div class="menu-trigger" data-menu="dt-main-menu">  <i class="menu-trigger-icon"></i></div> </div> 
-  {% endunless %}
+  {% endunless %} {% endcomment %}
 
   {% if section.settings.show_header_currency %}  
   {% form 'currency'%}
@@ -223,7 +223,9 @@
           <div class="logo-alignment {% if section.settings.show_secondary_menu %} secondary-menu-enabled{% endif %} {% unless section.settings.show_secondary_menu %} dt-sc-{{ section.settings.menu_align }} {% endunless %}">             
             <nav id="AccessibleNav" role="navigation" class="dt-sc-flex-space-between" data-menu="dt-main-menu">             
               {% if  section.settings.menu_align == 'logo_left' or section.settings.menu_align == 'menu_bottom' %}
-
+              {%- unless section.settings.show_secondary_menu or  section.settings.menu_align == 'menu_bottom'  -%}
+                <div  class="mobile-nav-container mobile-nav-offcanvas-right dt-header-menu" data-menu="dt-main-menu"><div class="menu-trigger" data-menu="dt-main-menu">  <i class="menu-trigger-icon"></i></div> </div> 
+              {% endunless %}
               {% unless  section.settings.show_secondary_menu %}
               {{ logo }}
               {% endunless %}         
