@@ -354,6 +354,12 @@
     footer div[class*="text-"] > *:last-child{ margin-bottom:0; line-height: 2em; text-align: center; }
     footer.site-footer .dt-sc-flex-space-between>*:last-child { justify-content: flex-start; text-align: start; } 
     .footer__item--{{ block.id }}.footer-contact-info .contact-info li{ text-align: start; }
+    .dt-sc-flex-space-between .footer-newsletter,
+    .dt-sc-flex-space-between .footer-links { display: none; }
+    .dt-sc-flex-space-between .footer-html { display: flex; flex-direction: column; align-items: center; justify-content: center; padding-bottom: 2.5rem;}
+    .dt-sc-flex-space-between .footer-html .text-start { display: flex; flex-direction: column-reverse; align-items: center; justify-content: center; gap: 1rem}
+    .dt-sc-flex-space-between .footer-html div { margin-bottom: 0;}
+    footer div[class*="text-"] > *:not(.dt-sc-list-inline){ margin-bottom:0; display: block; }
   }
    @media only screen and (max-width: 1023px) {
 .dt-sc-flex-space-between .footer__item--{{ block.id }}.footer-links .footer_menu { display: block; justify-content: space-between;}
