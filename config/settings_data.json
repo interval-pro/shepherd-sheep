@@ -323,7 +323,7 @@
         ],
         "settings": {
           "full": true,
-          "spacing_both_ends": true,
+          "spacing_both_ends": false,
           "use_sticky_header": false,
           "use_sticky_mobile": false,
           "transparent_header": true,
