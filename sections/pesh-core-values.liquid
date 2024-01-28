@@ -144,6 +144,20 @@ Our mission is to continue to innovate and create purpose-built boxers that are 
         font-weight: 700;
     }
 
+    @media(max-width:767px) {
+        .what-we-do-sub-sction .content {
+            flex-direction: column;
+            .text, .image {
+                width: 100% !important;
+            }
+            .image {
+                text-align: center;
+            }
+            .text {
+                text-align: justify !important;
+            }
+        }
+}
     </style>
 {% schema %}
     {
