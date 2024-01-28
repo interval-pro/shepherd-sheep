@@ -353,10 +353,12 @@
   @media only screen and (max-width: 1199px) {
     footer .footer-html .mobile-footer-menu {
       display: flex !important;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.5rem;
       padding-bottom: 2rem;
       a {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
   {% for block in section.blocks %}
