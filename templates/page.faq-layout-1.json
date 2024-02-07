@@ -151,6 +151,9 @@
     },
     "5de0faa6-29c7-4f01-9c92-4e5440fc689b": {
       "type": "home-deal-banner",
+      "custom_css": [
+        ".dt-sc-sub-heading {font-size: 30px !imporatant;}"
+      ],
       "settings": {
         "full": false,
         "spacing_both_ends": false,
@@ -163,14 +166,14 @@
         "background_color": "",
         "overlay_transparency": "0",
         "section_heading": "",
-        "section_sub_heading": "If you have any other questions, feel free to contact us.",
-        "section_description": "",
+        "section_sub_heading": "",
+        "section_description": "If you have any other questions, feel free to contact us.",
         "section_button_text": "",
         "section_button_link": "",
         "heading_position": "text-center",
         "section_heading_color": "",
         "section_sub_heading_color": "#304768",
-        "section_description_color": "",
+        "section_description_color": "#304768",
         "section_button_bg_color": "",
         "section_button_text_color": "",
         "section_button_hover_bg_color": "",
