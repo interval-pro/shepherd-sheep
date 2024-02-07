@@ -402,8 +402,8 @@
         "1654766019b7121b04-1"
       ],
       "custom_css": [
-        ".dt-sc-heading-description {font-size: 24px;}",
-        "@media (max-width: 768px) {.dt-sc-heading-description {font-size: 18px; }}"
+        ".dt-sc-description {font-size: 24px;}",
+        "@media (max-width: 768px) {.dt-sc-description {font-size: 18px; }}"
       ],
       "settings": {
         "full": false,
