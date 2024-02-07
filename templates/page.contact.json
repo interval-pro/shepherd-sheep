@@ -8,7 +8,8 @@
     "a1858ee6-94a1-4400-9366-ec276e8e21c1": {
       "type": "custom-content",
       "custom_css": [
-        "p.dt-sc-heading-description {font-size: 30px; margin-bottom: 36px}"
+        "p.dt-sc-heading-description {font-size: 30px; margin-bottom: 36px;}",
+        "@media(max-width:767px) {p.dt-sc-heading-description {font-size: 30px;}}"
       ],
       "settings": {
         "full": false,
