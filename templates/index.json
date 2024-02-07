@@ -161,7 +161,7 @@
         "full": false,
         "spacing_both_ends": false,
         "padding": "0,0",
-        "margin": "0,0",
+        "margin": "85,0",
         "show_background_image": false,
         "background_style": "none",
         "background_size": "auto",
