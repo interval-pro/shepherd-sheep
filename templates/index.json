@@ -493,7 +493,7 @@
       "settings": {
         "full": false,
         "spacing_both_ends": false,
-        "padding": "120,0",
+        "padding": "75,120",
         "margin": "0,0",
         "show_background_image": false,
         "background_style": "none",
