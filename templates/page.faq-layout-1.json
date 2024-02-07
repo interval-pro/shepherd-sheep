@@ -71,7 +71,7 @@
         "39eec3bb-4707-4d13-82cf-6c5be8028428"
       ],
       "custom_css": [
-
+        ".dt-sc-heading-description {font-size: 30px;}"
       ],
       "settings": {
         "full": false,
