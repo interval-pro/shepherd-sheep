@@ -615,6 +615,9 @@
         "165476243735654aa8-2",
         "2660b374-02c6-49cc-b9e8-8bf4b2c63c79"
       ],
+      "custom_css": [
+        ".dt-sc-support-description {font-size: 20px !important;}"
+      ],
       "settings": {
         "full": false,
         "spacing_both_ends": false,
