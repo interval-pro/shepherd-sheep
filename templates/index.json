@@ -812,10 +812,13 @@
         "template--21586450579757__8a004e30-fc3f-4097-8004-b1f140c4c612-icon-3",
         "1245833f-c261-4a40-8b94-189ca94bc4ab"
       ],
+      "custom_css": [
+        ".dt-sc-support-description {font-size: 20px !important;}"
+      ],
       "settings": {
         "full": false,
         "spacing_both_ends": false,
-        "padding": "100,100",
+        "padding": "60,60",
         "margin": "10,10",
         "show_background_image": false,
         "background_style": "none",
