@@ -9,7 +9,7 @@
       "type": "custom-content",
       "custom_css": [
         "p.dt-sc-heading-description {font-size: 30px; margin-bottom: 36px;}",
-        "@media(max-width:767px) {p.dt-sc-heading-description {font-size: 30px;}}"
+        "@media(max-width:767px) {p.dt-sc-heading-description {font-size: 20px;}}"
       ],
       "settings": {
         "full": false,
