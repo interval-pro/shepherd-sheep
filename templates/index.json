@@ -287,7 +287,8 @@
         "1654756031b57efd86-1"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {{font-size: 18px; }}"
+        ".dt-sc-heading-description {font-size: 24px;}",
+        "@media (max-width: 768px) {.dt-sc-heading-description {font-size: 18px; }}"
       ],
       "settings": {
         "full": false,
@@ -401,7 +402,8 @@
         "1654766019b7121b04-1"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {{font-size: 9px; }}"
+        ".dt-sc-heading-description {font-size: 24px;}",
+        "@media (max-width: 768px) {.dt-sc-heading-description {font-size: 18px; }}"
       ],
       "settings": {
         "full": false,
