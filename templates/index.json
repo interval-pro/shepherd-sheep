@@ -287,7 +287,7 @@
         "1654756031b57efd86-1"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {{\/* font-size: 9px; *\/ }}"
+        "@media (max-width: 768px) {{font-size: 18px; }}"
       ],
       "settings": {
         "full": false,
