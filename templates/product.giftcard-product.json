@@ -103,6 +103,9 @@
         "cad3ad3e-6913-4865-a804-9c9d16146aca",
         "cc198ead-a891-4147-b2e3-4d6222e238a0"
       ],
+      "custom_css": [
+        "@media (max-width: 767px) {.product-tab {background: red;}}"
+      ],
       "settings": {
         "default_text_color": "#f4f4f4",
         "full": false,
