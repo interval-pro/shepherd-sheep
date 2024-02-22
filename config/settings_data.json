@@ -438,24 +438,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "40cc8690-9f76-4648-82d9-1632b26486a0": {
-            "type": "logo",
-            "disabled": true,
-            "settings": {
-              "title": "",
-              "text": "",
-              "link_text": "#shepherdAndSheep",
-              "url": "",
-              "footer_btn_color": "#ffffff",
-              "footer_btn_bg": "#ba8d69",
-              "footer_btn_hover_color": "#ba8d69",
-              "footer_btn_hover_bg": "#ba8d69",
-              "logo": "shopify:\/\/shop_images\/no-background-sheep-text-red-v2.png",
-              "footer_logo_height": 150,
-              "container_width": 31,
-              "column_alignment": "text-center"
-            }
-          },
           "d3b8d8bf-5080-4f94-bdce-64951e2de89e": {
             "type": "html",
             "settings": {
@@ -518,7 +500,6 @@
           }
         },
         "block_order": [
-          "40cc8690-9f76-4648-82d9-1632b26486a0",
           "d3b8d8bf-5080-4f94-bdce-64951e2de89e",
           "a113a912-416f-490d-b721-39fc8d9742b9",
           "93fb6813-2828-4aa7-b236-e60a45272a82",
