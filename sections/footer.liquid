@@ -308,7 +308,7 @@
 
   {% for block in section.blocks %}
 
-   @media only screen and (max-width: 1540px) {
+   @media only screen and (min-width: 1540px) {
   .dt-sc-flex-space-between .footer__item--{{ block.id }}.footer-links .footer_menu li { padding: 0 20px; }
      .dt-sc-flex-space-between .footer__item--{{ block.id }}.footer-links .footer_menu {  display: flex; justify-content: flex-start;   /*  justify-content: center;    grid-template-columns: auto auto auto auto; display:grid; */ }
      .footer__item--{{ block.id }}.footer-contact-info .contact-info  {     justify-content: flex-start;  max-width: 88%;}

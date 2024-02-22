@@ -154,7 +154,7 @@
   #shopify-section-{{section.id}}.home-grid-banner .dt-sc-grid-banner-section .dt-sc-grid-banner.{{block.type}}-{{block.id}}:hover .with-gradient-overlay:before {
     opacity: {{ block.settings.overlay_opacity }};
   }
-  @media only screen and (min-width:768px) and (max-width: 1540px) {
+  @media only screen and (min-width:768px) and (min-width: 1540px) {
   #shopify-section-{{section.id}}.home-grid-banner .dt-sc-grid-banner.{{block.type}}-{{block.id}} .dt-sc-main-title{ position:relative !important; width:100% !important;}
 }
   {% endfor %}  
@@ -293,7 +293,7 @@
 
   }
   {% for block in section.blocks %} 
-  @media (max-width: 1540px) {
+  @media (min-width: 1540px) {
   #shopify-section-{{section.id}}.home-grid-banner .roar-suit-grid-banner-1 .dt-sc-grid-banner.{{block.type}}-{{block.id}} .dt-sc-description { margin: 10px 0 40px 0; max-width: 90%; line-height: normal; }
     #shopify-section-{{section.id}}.home-grid-banner .roar-suit-grid-banner-1 .dt-sc-grid-banner-section .dt-sc-grid-banner.list-style .dt-sc-grid-banner-content { padding: 50px 0 0px 40px; }
     #shopify-section-{{section.id}}.home-grid-banner .dt-sc-grid-banner-section .dt-sc-grid-banner.list-style .dt-sc-grid-banner-image { 
