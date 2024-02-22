@@ -395,11 +395,48 @@
             "overlay_opacity": "0.5",
             "rotation_degree": "180"
           }
+        },
+        "content_aPcrdU": {
+          "type": "content",
+          "settings": {
+            "grid_banner_type": "image",
+            "block_image": "shopify:\/\/shop_images\/R6II5643.jpg",
+            "block_video": "https:\/\/www.w3schools.com\/tags\/mov_bbb.mp4",
+            "video_icon_color": "",
+            "video_icon_position": "icon-top-left",
+            "content_with_icon": false,
+            "video_icon_outer_size": "60px",
+            "video_icon_size": "40px",
+            "show_image": true,
+            "show_content": true,
+            "block_title": "Latest breathable underwear",
+            "block_sub_title": "",
+            "block_description": "Experience a new level of comfort with our breathable underwear. Our designs prioritise airflow, keeping you cool and confident throughout the day. Say goodbye to discomfort and hello to refreshing wear, no matter the occasion.",
+            "block_button_text": "",
+            "block_button_link": "",
+            "block_text_align": "text-end",
+            "content_position": "center",
+            "reverse_column": true,
+            "block_banner_bg": "",
+            "block_content_box_bg": "",
+            "block_heading_color": "",
+            "block_sub_heading_color": "",
+            "block_description_color": "",
+            "block_button_bg_color": "",
+            "block_button_text_color": "",
+            "block_button_hover_bg_color": "",
+            "block_button_hover_text_color": "",
+            "overlay_style": "use_overlay",
+            "overlay_color": "",
+            "overlay_opacity": "0.5",
+            "rotation_degree": "180"
+          }
         }
       },
       "block_order": [
         "1654766019b7121b04-0",
-        "1654766019b7121b04-1"
+        "1654766019b7121b04-1",
+        "content_aPcrdU"
       ],
       "custom_css": [
         ".dt-sc-description {font-size: 24px;}",
@@ -486,6 +523,7 @@
       "block_order": [
         "16547682938c3e1817-0"
       ],
+      "disabled": true,
       "custom_css": [
         ".dt-sc-description {font-size: 24px;}",
         "@media (max-width: 768px) {.dt-sc-description {font-size: 18px; }}"
