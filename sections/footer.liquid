@@ -351,6 +351,15 @@
   {% endif %}
 
   @media only screen and (max-width: 1199px) {
+    footer .container {
+      padding: 0 12px;
+    }
+    footer .footer-social-icons {
+      transform: scale(0.65);
+    }
+    .footer-html {
+      margin-bottom: 12px !important;
+    }
     footer .footer-html .mobile-footer-menu {
       display: flex !important;
       flex-wrap: wrap;
@@ -358,7 +367,8 @@
       gap: 1.5rem;
       padding-bottom: 2rem;
       a {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
       }
     }
   {% for block in section.blocks %}
