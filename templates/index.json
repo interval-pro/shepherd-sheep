@@ -414,7 +414,7 @@
             "block_description": "Experience a new level of comfort with our breathable underwear. Our designs prioritise airflow, keeping you cool and confident throughout the day. Say goodbye to discomfort and hello to refreshing wear, no matter the occasion.",
             "block_button_text": "",
             "block_button_link": "",
-            "block_text_align": "text-end",
+            "block_text_align": "text-start",
             "content_position": "center",
             "reverse_column": true,
             "block_banner_bg": "",
