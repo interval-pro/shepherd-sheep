@@ -494,7 +494,7 @@
               "newsletter_btn_bg": "#e13d1d",
               "newsletter_btn_hover_color": "#ffffff",
               "newsletter_btn_hover_bg": "#eebd7b",
-              "container_width": 15,
+              "container_width": 20,
               "column_alignment": "text-end"
             }
           }

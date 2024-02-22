@@ -149,7 +149,7 @@
       "settings": {
         "full": false,
         "spacing_both_ends": false,
-        "padding": "50,50",
+        "padding": "0",
         "margin": "0,0",
         "heading": "Recommended Products",
         "heading_position": "text-center",
