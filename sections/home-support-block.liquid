@@ -656,6 +656,25 @@ overflow: hidden;
   .home-support-block .dt-sc-section-wrapper {
     margin-bottom: 0;
   }
+
+}
+
+@media only screen and (max-width: 560px) {
+  #shopify-section-{{ section.id }} .dt-sc-section-wrapper {
+      padding: 0 !important;
+      .container {
+        padding: 0 !important;
+      }
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  #shopify-section-{{ section.id }} .dt-sc-section-wrapper {
+      .dt-sc-support-block {
+        max-width: 100%;
+        margin: 36px 0;
+      }
+  }
 }
 
 @media only screen and (max-width: 767px) and(min-width: 577px) {
@@ -666,7 +685,9 @@ overflow: hidden;
   }
 
 
+
 }
+
 </style>
 
 {% schema %}
