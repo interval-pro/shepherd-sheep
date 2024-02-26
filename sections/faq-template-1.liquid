@@ -208,8 +208,19 @@
     #shopify-section-{{section.id}}.faq-template-1 .dt-sc-section-wrapper { margin-top:{{margin_top | divided_by: 2 }}px; margin-bottom:{{margin_bottom | divided_by: 2}}px;padding-top:{{padding_top | divided_by: 2}}px; padding-bottom:{{padding_bottom | divided_by: 2}}px;}
   }
   @media only screen and (max-width: 480px) {
-    #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container .dt-sc-accordion-btn h5 { font-size: calc(var(--DTFontSize_H5) - 10px); }
-
+    /* #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container .dt-sc-accordion-btn h5 { font-size: calc(var(--DTFontSize_H5) - 10px); } */
+    #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container {
+      width: 100%;
+    }
+    #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container .dt-sc-accordion-content-inner {
+      padding: 1rem;
+    }
+    #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container.text-start .dt-sc-accordion-btn h5::after {
+      content: none;
+    }
+    #shopify-section-{{section.id}}.faq-template-1 .dt-sc-accordion-container.text-start .dt-sc-accordion-btn {
+      padding: 1rem;
+    }
   }
 </style>
 
