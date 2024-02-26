@@ -105,9 +105,13 @@
     }
 
     @media(max-width:767px) {
+
       .sizing-chart-section {
         padding: 0 0.5rem !important;
-        padding-bottom: 5rem !important;
+        padding-bottom: 2rem !important;
+        .sizing-chart-title {
+          padding: 2rem;
+        }
         .sizing-chart-table {
           table {
             th,td {
@@ -119,6 +123,15 @@
         }
       }
 
+    }
+
+    @media only screen and (max-width: 480px) {
+      .sizing-chart-section .sizing-chart-table th {
+        padding: 1rem !important;
+      }
+      .sizing-chart-section .sizing-chart-table td {
+        padding: 0.5rem 0.75rem;
+      }
     }
 </style>
 {% schema %}
