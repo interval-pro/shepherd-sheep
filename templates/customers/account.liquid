@@ -28,56 +28,57 @@
 
         <div class="content-wrapper">
             <div class='inside-content' id="personal-info-content">
-                <div class="personal-details">
+                <form class="personal-details" id="customer_edit" method="put" action="/account">
+                    <input type="hidden" name="form_type" value="customer_update" />
+                    <input type="hidden" name="utf8" value="✓" />
+                
                     <div class="custom-input">
                         <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="first-name" />
+                        <input type="text" id="firstname" name="customer[first_name]" value="{{ customer.first_name | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="surname">Last Name</label>
-                        <input type="text" id="surname" name="surname" />
+                        <input type="text" id="surname" name="customer[last_name]" value="{{ customer.last_name | escape }}" />
                     </div>
                     <div class="custom-input">
-                        <label for="phone">Phone Number</label>
-                        <input type="number" id="phone" name="phone" />
+                        <label for="surname">Phone</label>
+                        <input type="text" id="surname" name="customer[phone]" value="{{ customer.phone | escape }}" />
                     </div>
                     <div class="custom-input">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" />
+                        <label for="surname">Email Address</label>
+                        <input type="text" id="surname" name="customer[email]" value="{{ customer.email | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="company" />
+                        <input type="text" id="company" name="customer[default_address][company]" value="{{ customer.default_address.company | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="address1">Address 1</label>
-                        <input type="text" id="address1" name="address1" />
+                        <input type="text" id="address1" name="customer[default_address][address1]" value="{{ customer.default_address.address1 | escape }}" />
                     </div>
                     <div class="custom-input">
-                        <label for="address1">Address 2</label>
-                        <input type="text" id="address2" name="address2" />
-                    </div>
-                    <div class="custom-input">
-                        <label for="address3">House/ Apartment №</label>
-                        <input type="text" id="address3" name="address3" />
+                        <label for="address2">Address 2</label>
+                        <input type="text" id="address2" name="customer[default_address][address2]" value="{{ customer.default_address.address2 | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="city" />
+                        <input type="text" id="city" name="customer[default_address][city]" value="{{ customer.default_address.city | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="country">Country</label>
-                        <input type="text" id="country" name="country" />
+                        <input type="text" id="country" name="customer[default_address][country]" value="{{ customer.default_address.country | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="province">Province</label>
-                        <input type="text" id="province" name="province" />
+                        <input type="text" id="province" name="customer[default_address][province]" value="{{ customer.default_address.province_code | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="postcode">Postal / Zip Code</label>
-                        <input type="number" id="postcode" name="postcode" />
+                        <input type="text" id="postcode" name="customer[default_address][zip]" value="{{ customer.default_address.zip | escape }}" />
                     </div>
-                </div>
+                    <button type="submit">Save</button>
+                </form>
+            
                 <div class="change-password">
                     <p>Change Your Password</p>
                     <div class="custom-input">
@@ -93,7 +94,6 @@
                         <input type="password" id="sconf-pass" name="conf-pass" />
                     </div>
                 </div>
-                <button> Save </button>
             </div>
             <div class='inside-content' id="orders-content">
                 <div class="orders-list">
@@ -381,12 +381,7 @@
         const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
         const contentWrapper = document.querySelector('.content-wrapper');
         const insideContents = document.querySelectorAll('.inside-content');
-        const adjustContentHeight = (index) => {
-            const activeContentHeight = insideContents[index].offsetHeight + 'px';
-            console.log(activeContentHeight)
-            contentWrapper.style.height = activeContentHeight;
-        };
-
+        const adjustContentHeight = (index) => contentWrapper.style.height =  insideContents[index].offsetHeight + 'px';
         const slideContent = (index) => {
             contentWrapper.style.transform = `translateX(${index * -100}%)`;
             menuItems.forEach((item, i) => {
@@ -398,7 +393,11 @@
             updateUrl(sectionKeys[index]);
         }
         menuItems.forEach((item, index) => item.addEventListener('click', () => {
-            if (index === 4) return window.location.href = '/account/logout';
+            if (index === 4) {
+                const confirmLogout = confirm("Are you sure you want to log out?"); // Show confirmation dialog
+                if (confirmLogout) window.location.href = '/account/logout';
+                return;
+            }
             slideContent(index);
         }));
 
@@ -419,4 +418,29 @@
         if (section && sections.hasOwnProperty(section)) slideContent(sections[section]);
         window.onload = () => adjustContentHeight(sections[section]);
     });
+
+//     document.getElementById('customer-info-form')
+//         .addEventListener('submit', function(e) {
+//         e.preventDefault();
+//     const formData = new FormData(this);
+//     const object = {};
+//     formData.forEach((value, key) => object[key] = value);
+//     const jsonData = JSON.stringify(object);
+
+//     fetch('/path/to/your/update/endpoint', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: jsonData,
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log('Success:', data);
+//     })
+//     .catch((error) => {
+//         console.error('Error:', error);
+//     });
+// });
+
 </script>
