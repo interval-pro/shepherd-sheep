@@ -107,45 +107,10 @@
         "enable_segmented_layout": true,
         "segmented_layout_gap": "15",
         "faq_border_color": "#e13d1d",
-        "faq_heading_color": "#ffffff",
+        "faq_heading_color": "#f4f4f4",
         "faq_heading_bg_color": "rgba(0,0,0,0)",
-        "faq_content_color": "#ffffff",
+        "faq_content_color": "#EC8562",
         "faq_content_bg_color": "rgba(0,0,0,0)",
-        "custom_class_name": ""
-      }
-    },
-    "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3": {
-      "type": "home-html-text",
-      "disabled": true,
-      "custom_css": [
-        "\/* Center the button container horizontally and vertically *\/.button-container {position: absolute; padding: 40px; top: 50%; left: 50%; transform: translate(-50%, -150%); text-align: center;}",
-        " \/* Style the button *\/.styled-button {padding: 20px 60px; background-color: #c8924a; \/* Change this to your desired background color *\/ color: #ffffff; \/* Change this to your desired text color *\/ font-size: 16px; text-decoration: none; border-radius: 5px;}"
-      ],
-      "settings": {
-        "full": false,
-        "spacing_both_ends": false,
-        "padding": "100,0",
-        "margin": "100,0",
-        "show_background_image": false,
-        "background_style": "none",
-        "background_size": "auto",
-        "enable_overlay": false,
-        "background_color": "",
-        "overlay_transparency": "0.5",
-        "section_heading": "",
-        "section_sub_heading": "",
-        "section_description": "",
-        "section_button_text": "",
-        "section_button_link": "",
-        "section_heading_color": "",
-        "section_sub_heading_color": "",
-        "section_description_color": "",
-        "section_button_bg_color": "",
-        "section_button_text_color": "",
-        "section_button_hover_bg_color": "",
-        "section_button_hover_text_color": "",
-        "heading_position": "text-center",
-        "html": "<div class=\"button-container\">\n<a href=\"https:\/\/shepherd-sheep.myshopify.com\/pages\/contact?ose=false\" class=\"styled-button\">Contact Us<\/a>\n<\/div>",
         "custom_class_name": ""
       }
     },
@@ -204,7 +169,6 @@
   },
   "order": [
     "main",
-    "731a85d9-7f5a-4b03-ad02-2c9866c8b7c3",
     "5de0faa6-29c7-4f01-9c92-4e5440fc689b"
   ]
 }
