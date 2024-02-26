@@ -89,12 +89,12 @@
       "type": "sizing-chart",
       "settings": {
         "sizing_chart_title": "Sizing Chart",
-        "bg_color": "#F4F4F4",
+        "bg_color": "#f4f4f4",
         "title_color": "#304768",
-        "table_header_bg_color": "#E13D1D",
+        "table_header_bg_color": "#e13d1d",
         "table_font_color": "#ffffff",
         "border_color": "#ffffff",
-        "cell_color": "#EC8562"
+        "cell_color": "#ec8562"
       }
     }
   },
