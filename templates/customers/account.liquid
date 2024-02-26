@@ -125,7 +125,7 @@
                 {% section 'tracking-orders' %}
             </div>
             <div class='inside-content' id="returns-content">
-                
+                      <h1><center>Returns</center></h1>
             </div>
             <div class='inside-content' id="logout-content">
                       Logging Out ... 
@@ -194,6 +194,7 @@
     .account-container .content-wrapper .inside-content {
         flex: 0 0 100%;
         max-width: 100%;
+        height: fit-content;
     }
     .account-container .content-wrapper .custom-input {
         width: calc(50% - 2rem);
@@ -379,6 +380,13 @@
         const sectionKeys = Object.keys(sections);
         const menuItems = document.querySelectorAll('.account-container .account-menu .menu-item');
         const contentWrapper = document.querySelector('.content-wrapper');
+        const insideContents = document.querySelectorAll('.inside-content');
+        const adjustContentHeight = (index) => {
+            const activeContentHeight = insideContents[index].offsetHeight + 'px';
+            console.log(activeContentHeight)
+            contentWrapper.style.height = activeContentHeight;
+        };
+
         const slideContent = (index) => {
             contentWrapper.style.transform = `translateX(${index * -100}%)`;
             menuItems.forEach((item, i) => {
@@ -386,6 +394,7 @@
                     ? item.classList.add('active-menu-item')
                     : item.classList.remove('active-menu-item');
             });
+            adjustContentHeight(index); 
             updateUrl(sectionKeys[index]);
         }
         menuItems.forEach((item, index) => item.addEventListener('click', () => {
@@ -408,5 +417,6 @@
 
         const section = getUrlParam('section');
         if (section && sections.hasOwnProperty(section)) slideContent(sections[section]);
+        window.onload = () => adjustContentHeight(sections[section]);
     });
 </script>
