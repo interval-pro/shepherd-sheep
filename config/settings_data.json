@@ -2643,12 +2643,22 @@
       "16254638834e702403",
       "162546445354753e59",
       "1625464732dee99c61"
-    ]
+    ],
+    "blocks": {
+      "8962992520437913685": {
+        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": false
+        }
+      }
+    }
   },
   "platform_customizations": {
     "custom_css": [
       ".breadcrumb .breadcrumb_title {display: none;}",
-      " \/* Move reCAPTCHA v3 badge to the left *\/ .grecaptcha-badge {width: 70px !important; overflow: hidden !important; transition: all 0.3s ease !important; left: 4px !important;}",
+      " \/* Move reCAPTCHA v3 badge to the left *\/.grecaptcha-badge {width: 70px !important; overflow: hidden !important; transition: all 0.3s ease !important; left: 4px !important;}",
       ".grecaptcha-badge:hover {width: 256px !important;}"
     ]
   }
