@@ -28,71 +28,72 @@
 
         <div class="content-wrapper">
             <div class='inside-content' id="personal-info-content">
-                <form class="personal-details" id="customer_edit" method="put" action="/account">
-                    <input type="hidden" name="form_type" value="customer_update" />
-                    <input type="hidden" name="utf8" value="✓" />
-                
+                <div class="personal-details">
                     <div class="custom-input">
                         <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="customer[first_name]" value="{{ customer.first_name | escape }}" />
+                        <input readonly type="text" id="firstname" name="customer[first_name]" value="{{ customer.first_name | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="surname">Last Name</label>
-                        <input type="text" id="surname" name="customer[last_name]" value="{{ customer.last_name | escape }}" />
+                        <input readonly type="text" id="surname" name="customer[last_name]" value="{{ customer.last_name | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="surname">Phone</label>
-                        <input type="text" id="surname" name="customer[phone]" value="{{ customer.phone | escape }}" />
+                        <input readonly type="text" id="surname" name="customer[phone]" value="{{ customer.phone | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="surname">Email Address</label>
-                        <input type="text" id="surname" name="customer[email]" value="{{ customer.email | escape }}" />
+                        <input readonly type="text" id="surname" name="customer[email]" value="{{ customer.email | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="customer[default_address][company]" value="{{ customer.default_address.company | escape }}" />
+                        <input readonly type="text" id="company" name="customer[default_address][company]" value="{{ customer.default_address.company | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="address1">Address 1</label>
-                        <input type="text" id="address1" name="customer[default_address][address1]" value="{{ customer.default_address.address1 | escape }}" />
+                        <input readonly type="text" id="address1" name="customer[default_address][address1]" value="{{ customer.default_address.address1 | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="address2">Address 2</label>
-                        <input type="text" id="address2" name="customer[default_address][address2]" value="{{ customer.default_address.address2 | escape }}" />
+                        <input readonly type="text" id="address2" name="customer[default_address][address2]" value="{{ customer.default_address.address2 | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="customer[default_address][city]" value="{{ customer.default_address.city | escape }}" />
+                        <input readonly type="text" id="city" name="customer[default_address][city]" value="{{ customer.default_address.city | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="country">Country</label>
-                        <input type="text" id="country" name="customer[default_address][country]" value="{{ customer.default_address.country | escape }}" />
+                        <input readonly type="text" id="country" name="customer[default_address][country]" value="{{ customer.default_address.country | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="province">Province</label>
-                        <input type="text" id="province" name="customer[default_address][province]" value="{{ customer.default_address.province_code | escape }}" />
+                        <input readonly type="text" id="province" name="customer[default_address][province]" value="{{ customer.default_address.province_code | escape }}" />
                     </div>
                     <div class="custom-input">
                         <label for="postcode">Postal / Zip Code</label>
-                        <input type="text" id="postcode" name="customer[default_address][zip]" value="{{ customer.default_address.zip | escape }}" />
+                        <input readonly type="text" id="postcode" name="customer[default_address][zip]" value="{{ customer.default_address.zip | escape }}" />
                     </div>
-                    <button type="submit">Save</button>
-                </form>
+                </div>
             
-                <div class="change-password">
-                    <p>Change Your Password</p>
-                    <div class="custom-input">
-                        <label for="current-pass">Current Password</label>
-                        <input type="password" id="current-pass" name="current-pass" />
+                <div id="RecoverPasswordForm">
+                    <div class="section-header section-header--small">
+                      <h4 class="section-header__title">{{ "Change your password" }}</h4>
+                      <p>{{ "We will send you an email to change your password." }}</p>
                     </div>
-                    <div class="custom-input">
-                        <label for="new-pass">New Password</label>
-                        <input type="password" id="new-pass" name="new-pass" />
-                    </div>
-                    <div class="custom-input">
-                        <label for="conf-pass">Confirm Your Password</label>
-                        <input type="password" id="sconf-pass" name="conf-pass" />
-                    </div>
+                    {% form 'recover_customer_password', class: 'recover_customer_password' %}
+            
+                    {{ form.errors | default_errors }}
+                    {% if form.posted_successfully? %}
+                    {% assign reset_success = true %}
+                    {% endif %}
+            
+                    <input style="display: none" type="email" value="{{ customer.email }}" name="email" id="RecoverEmail">
+                    <input type="submit" class="btn" value="Send Email" style="margin: 2rem auto;">
+
+                    {% endform %}
+                    <div class="note form-success" id="ResetSuccess" style="display:none;">
+                        {{ 'customer.recover_password.success' | t }}
+                      </div>
                 </div>
             </div>
             <div class='inside-content' id="orders-content">
@@ -133,6 +134,11 @@
         </div>
     </div>
 </div>
+<script>
+    {% if reset_success %}
+        document.getElementById('ResetSuccess').style.display = 'block';
+    {% endif %}
+</script>
 <style>
     .account-container-wrapper {
         width: 100%;
